@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "qwen2.5:1.5b-instruct-fp16": {
+      "file_size_mib": 2950.3657846450806,
+      "ollama_loaded_size_mib": 3544.149998664856,
+      "ollama_in_vram_mib": 2263.0,
+      "gpu_mem_increase_mib": 2340,
+      "gen_tok_s_overall": 9.709022507511214,
+      "gen_tok_s_median": 10.477410489901514,
+      "prompt_tok_s_median": 262.7742733597652,
+      "total_generated_tokens": 457
+    },
+    "qwen2.5:1.5b-instruct-q8_0": {
+      "file_size_mib": 1570.3071918487549,
+      "ollama_loaded_size_mib": 1687.1399984359741,
+      "ollama_in_vram_mib": 1687.1399984359741,
+      "gpu_mem_increase_mib": 1771,
+      "gen_tok_s_overall": 77.3685746725452,
+      "gen_tok_s_median": 76.07474776018589,
+      "prompt_tok_s_median": 1528.059156180228,
+      "total_generated_tokens": 554,
+      "identical_to_fp16": 7,
+      "mean_char_similarity_to_fp16": 0.8604530676392701
+    },
+    "qwen2.5:1.5b-instruct-q4_K_M": {
+      "file_size_mib": 940.3819007873535,
+      "ollama_loaded_size_mib": 1057.2099990844727,
+      "ollama_in_vram_mib": 1057.2099990844727,
+      "gpu_mem_increase_mib": 1141,
+      "gen_tok_s_overall": 99.36994349856434,
+      "gen_tok_s_median": 94.42848352926812,
+      "prompt_tok_s_median": 1578.666700810498,
+      "total_generated_tokens": 506,
+      "identical_to_fp16": 6,
+      "mean_char_similarity_to_fp16": 0.8652233395631326
+    }
+  },
+  "kv_probe": {
+    "2048": {
+      "size_mib": 1057.2099990844727,
+      "size_vram_mib": 1057.2099990844727
+    },
+    "8192": {
+      "size_mib": 1303.7299995422363,
+      "size_vram_mib": 1303.7299995422363
+    },
+    "32768": {
+      "size_mib": 2023.7299995422363,
+      "size_vram_mib": 2023.7299995422363
+    }
+  }
+}

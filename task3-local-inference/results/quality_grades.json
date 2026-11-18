@@ -1,0 +1,22 @@
+{
+  "how_graded": "Each output in results/outputs_gpu.json read by hand against the expected answer in prompts.json. The palindrome functions (prompt 3) were executed against 5 test strings, all passed.",
+  "score": {
+    "qwen2.5:1.5b-instruct-fp16": 10,
+    "qwen2.5:1.5b-instruct-q8_0": 10,
+    "qwen2.5:1.5b-instruct-q4_K_M": 10
+  },
+  "per_prompt": {
+    "1 arithmetic (16)": "all correct; q4 drops the LaTeX formatting, same working",
+    "2 fact (Canberra)": "all identical",
+    "3 code": "all correct, same function; all ignore 'only output the code' and add test prints; q4 picks different test cases",
+    "4 JSON extraction": "all identical, correct",
+    "5 logic (yes)": "all correct; q4 gives a 94-token explanation instead of ~30",
+    "6 summary": "all one accurate sentence, worded slightly differently",
+    "7 translation": "all identical; 'se clôture' is understandable but unidiomatic ('ferme' is the natural verb)",
+    "8 letter count (3)": "all identical, correct",
+    "9 17 x 24 (408)": "all identical, correct",
+    "10 miles to km (8.05)": "all correct; q8 adds a 115-token worked calculation, fp16 and q4 answer in one line"
+  },
+  "observations": "<b>Quality.</b> All three precisions answered all 10 prompts correctly; the generated code passed 5 test strings in every case. Differences are only in style and length: with greedy decoding, q8_0 reproduced the fp16 text exactly on 7/10 prompts and q4_K_M on 6/10 (mean character similarity to fp16 0.86 / 0.87). Where they diverge, the quantised model takes a different but equally valid path (q8 writes a long worked calculation for the unit conversion, q4 a longer logic explanation and different test cases), because a small change in the logits flips one early token and greedy decoding then follows a different continuation. Shared weaknesses are model-level, not precision-level: all three use the unidiomatic 'se clôture' and ignore 'only output the code'. One more effect: CPU and GPU runs of the same quantised file were identical on only 7/10 (q8) and 5/10 (q4) prompts versus 10/10 for fp16, since the two backends dequantise and accumulate in a different order. <b>Speed and memory.</b> fp16 does not fit a 4 GB laptop GPU next to the desktop's own usage: Ollama put 64% of it in VRAM and ran the rest on the CPU, and the CPU half sets the pace (9.7 tok/s). q8_0 and q4_K_M fit entirely and run 8x and 10x faster. On CPU only, speed tracks bytes per weight almost exactly (3.9 &rarr; 7.8 &rarr; 13.9 tok/s for 16 &rarr; 8.5 &rarr; ~4.8 bits), which is what you expect when decoding is limited by memory bandwidth.",
+  "prompt_table_note": "Prompts (prompts.json): arithmetic word problem, capital of Australia, palindrome function, JSON extraction, syllogism, one-sentence summary, English&rarr;French, count r in 'strawberry', 17 x 24, miles&rarr;km. Full outputs: task3-local-inference/results/outputs_gpu.json (and outputs_cpu.json)."
+}

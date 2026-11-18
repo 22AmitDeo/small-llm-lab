@@ -11,6 +11,7 @@ Then a KV-cache probe: load the 4-bit model with growing context windows and wat
 Usage:  python benchmark.py            (needs `ollama serve` running and the tags pulled)
 """
 import difflib
+import os
 import json
 import statistics
 import subprocess
@@ -25,6 +26,7 @@ MODELS = ["qwen2.5:1.5b-instruct-fp16", "qwen2.5:1.5b-instruct-q8_0", "qwen2.5:1
 OPTIONS = {"temperature": 0, "seed": 0, "num_predict": 256, "num_ctx": 2048}
 PROMPTS = json.loads((HERE / "prompts.json").read_text(encoding="utf-8"))
 OUT = HERE / "results"
+TAG = os.environ.get("RESULTS_TAG", "")  # e.g. "_gpu" -> results/benchmark_summary_gpu.json
 OUT.mkdir(exist_ok=True)
 
 
@@ -109,9 +111,9 @@ def main() -> None:
         print(f"num_ctx {ctx:>6}: Ollama reports {kv[ctx]['size_mib']:.0f} MiB", flush=True)
     unload_all()
 
-    (OUT / "benchmark_summary.json").write_text(json.dumps({"summary": summary, "kv_probe": kv}, indent=2),
+    (OUT / f"benchmark_summary{TAG}.json").write_text(json.dumps({"summary": summary, "kv_probe": kv}, indent=2),
                                                 encoding="utf-8")
-    (OUT / "outputs.json").write_text(json.dumps(outputs, indent=2, ensure_ascii=False), encoding="utf-8")
+    (OUT / f"outputs{TAG}.json").write_text(json.dumps(outputs, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 if __name__ == "__main__":

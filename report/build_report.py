@@ -10,7 +10,7 @@ from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import cm
-from reportlab.platypus import KeepTogether, PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 ROOT = Path(__file__).resolve().parent.parent
 T1, T2, T3 = ROOT / "task1-lora-finetuning", ROOT / "task2-rag-from-scratch", ROOT / "task3-local-inference"
@@ -22,9 +22,9 @@ def load(p: Path):
 
 # ------------------------------------------------------------------ styles
 ss = getSampleStyleSheet()
-BODY = ParagraphStyle("body", parent=ss["Normal"], fontName="Helvetica", fontSize=8.2, leading=10.2,
+BODY = ParagraphStyle("body", parent=ss["Normal"], fontName="Helvetica", fontSize=9, leading=11.4,
                       alignment=TA_LEFT, spaceAfter=3)
-SMALL = ParagraphStyle("small", parent=BODY, fontSize=7.4, leading=9)
+SMALL = ParagraphStyle("small", parent=BODY, fontSize=8.2, leading=10)
 H1 = ParagraphStyle("h1", parent=ss["Heading1"], fontName="Helvetica-Bold", fontSize=11.5, leading=14,
                     spaceBefore=4, spaceAfter=3, textColor=colors.HexColor("#1f3a5f"))
 H2 = ParagraphStyle("h2", parent=ss["Heading2"], fontName="Helvetica-Bold", fontSize=8.8, leading=11,
@@ -37,7 +37,7 @@ def P(text, style=BODY):
     return Paragraph(text, style)
 
 
-def table(rows, widths, header=True, bold_rows=(), font=7.4):
+def table(rows, widths, header=True, bold_rows=(), font=8.1):
     data = [[c if isinstance(c, Paragraph) else Paragraph(str(c), ParagraphStyle(
         "cell", parent=SMALL, fontSize=font, leading=font + 1.6)) for c in r] for r in rows]
     t = Table(data, colWidths=[w * cm for w in widths], repeatRows=1 if header else 0)
@@ -105,8 +105,11 @@ story.append(table([
     ["Learning rate", f"{a['lr']:.0e}, cosine, 5% warm-up", "LoRA tolerates ~10x higher LR than full fine-tuning because "
      "only small fresh matrices move; cosine decay settles the end of training."],
     ["Epochs / batch", f"{a['epochs']} / {a['micro_batch'] * a['grad_accum']} "
-     f"({a['micro_batch']} x {a['grad_accum']} accumulation)", "Dev loss was still falling after epoch 1 and only slightly "
-     "after epoch 2, so 2 epochs. Micro-batch 2: Qwen's 152k-token vocabulary makes the logits large on a 4 GB GPU."],
+     f"({a['micro_batch']} x {a['grad_accum']} accumulation)", "~4k examples is small, so a few passes are needed, but each "
+     f"epoch costs ~{tl['lora']['train_seconds'] / 60 / a['epochs']:.0f} min here. Dev loss still improved from epoch 1 to 2 "
+     f"({[h for h in tl['lora']['history'] if 'epoch' in h][0]['dev_loss']:.3f} &rarr; "
+     f"{[h for h in tl['lora']['history'] if 'epoch' in h][1]['dev_loss']:.3f}) with train loss "
+     "close to it (no sign of overfitting). Micro-batch 2: Qwen's 152k-token vocabulary makes the logits large on 4 GB."],
     ["Dropout / loss", f"{a['dropout']} / answer tokens only", "Light regularisation; prompt tokens are masked "
      "(label -100) so the model learns to produce the JSON, not to copy the instructions."],
 ], [2.6, 3.4, 9.6]))
@@ -203,22 +206,25 @@ story.append(P(
     "so it only re-orders a short list (here the top 20 from hybrid search) rather than searching the whole corpus."))
 
 # ================================================================== TASK 3
-b = load(T3 / "results" / "benchmark_summary.json")
+b = load(T3 / "results" / "benchmark_summary_gpu.json")
+bc = load(T3 / "results" / "benchmark_summary_cpu.json")["summary"]
 q = load(T3 / "results" / "quality_grades.json")
 S, kv = b["summary"], b["kv_probe"]
 story.append(P("Task 3 - Running Qwen2.5-1.5B-Instruct locally with Ollama at three precisions", H1))
 story.append(P(
-    "Same model, same 10 prompts, greedy decoding (temperature 0, seed 0, max 256 new tokens, 2k context). Speed comes "
-    "from Ollama's own token counts and timers; memory from Ollama's loaded size (/api/ps) and the rise in GPU memory "
-    "(nvidia-smi) when the model is loaded."))
-rows = [["Setting", "File size", "Loaded (Ollama)", "of which in VRAM", "GPU mem rise", "Generation tok/s",
-         "Prompt tok/s", "Correct (of 10)"]]
+    "Same model in Ollama (llama.cpp backend) as fp16, q8_0 (8-bit) and q4_K_M (4-bit); same 10 prompts; greedy "
+    "decoding (temperature 0, seed 0, max 256 new tokens, 2k context). Run twice: with the GPU, and CPU-only. Speed comes "
+    "from Ollama's own token counts and timers (eval_count / eval_duration); memory from Ollama's report of the loaded "
+    "model (/api/ps: total and part in VRAM) and the rise in GPU memory (nvidia-smi) on loading."))
+rows = [["Setting", "File size", "Loaded (Ollama)", "in VRAM", "GPU mem rise", "Gen. tok/s (GPU)",
+         "Gen. tok/s (CPU only)", "Prompt tok/s (GPU)", "Correct /10"]]
 for name, v in S.items():
     tag = name.split("-")[-1]
     rows.append([tag, f"{v['file_size_mib']:.0f} MiB", f"{v['ollama_loaded_size_mib']:.0f} MiB",
-                 f"{v['ollama_in_vram_mib']:.0f} MiB", f"{v['gpu_mem_increase_mib']:.0f} MiB",
-                 f"{v['gen_tok_s_overall']:.1f}", f"{v['prompt_tok_s_median']:.0f}", f"{q['score'][name]}"])
-story.append(table(rows, [1.6, 1.7, 2.1, 2.1, 1.9, 2.2, 1.8, 2.0]))
+                 f"{v['ollama_in_vram_mib']:.0f} MiB ({100 * v['ollama_in_vram_mib'] / v['ollama_loaded_size_mib']:.0f}%)",
+                 f"{v['gpu_mem_increase_mib']:.0f} MiB", f"<b>{v['gen_tok_s_overall']:.1f}</b>",
+                 f"{bc[name]['gen_tok_s_overall']:.1f}", f"{v['prompt_tok_s_median']:.0f}", f"{q['score'][name]}"])
+story.append(table(rows, [1.5, 1.6, 1.9, 2.0, 1.7, 1.8, 1.9, 1.8, 1.4]))
 story.append(Spacer(1, 3))
 story.append(P(q["observations"]))
 story.append(P(q["prompt_table_note"], SMALL))
@@ -233,11 +239,13 @@ story.append(P(
     "concurrent sequences. For Qwen2.5-1.5B (28 layers, 2 KV heads x 128 dims thanks to grouped-query attention, fp16) "
     f"it is 2 (K,V) x 28 x 2 x 128 x 2 bytes = {per_tok // 1024} KiB per token. Measured: loading the same 4-bit model "
     f"with a 2k / 8k / 32k context window took {k[2048]:.0f} / {k[8192]:.0f} / {k[32768]:.0f} MiB - "
-    f"+{k[32768] - k[2048]:.0f} MiB for 30k extra tokens, close to the {per_tok * 30720 / 2**20:.0f} MiB the formula gives. "
+    f"+{k[32768] - k[2048]:.0f} MiB for 30,720 extra tokens; the formula predicts {per_tok * 30720 / 2**20:.0f} MiB, and "
+    "the remaining ~15% is scratch buffers that also grow with the context window. "
     "<b>Quantisation</b> stores each weight in fewer bits: 16 bits &rarr; ~8.5 (q8_0) &rarr; ~4.8 (q4_K_M, blocks of "
     "weights share a scale so 4-bit codes can be mapped back to real values). Memory scales with bits per weight, and "
     "because token-by-token decoding is limited by how fast weights are read from memory, fewer bytes also means more "
-    "tokens per second. The cost is rounding error, which shows up first in brittle tasks (exact arithmetic, counting)."))
+    "tokens per second. The cost is rounding error in every weight; here it changed the wording of some answers but "
+    "not their correctness, though harder tasks and smaller bit-widths would be expected to show real quality loss."))
 
 story.append(P("Serving 20 concurrent users on one 24 GB GPU (back-of-envelope)", H2))
 story.append(P(

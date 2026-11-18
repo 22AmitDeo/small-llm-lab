@@ -1,0 +1,248 @@
+{
+  "qwen2.5:1.5b-instruct-fp16": [
+    {
+      "id": 1,
+      "output": "First, calculate the total cost of the pens:\n\\[ 7 \\text{ pens} \\times 12 \\text{ rupees/pen} = 84 \\text{ rupees} \\]\n\nNext, subtract the total cost from the amount paid to find the change:\n\\[ 100 \\text{ rupees} - 84 \\text{ rupees} = 16 \\text{ rupees} \\]\n\nSo, the change you get is 16 rupees.",
+      "gen_tokens": 105,
+      "gen_tok_s": 3.9848148951014557,
+      "prompt_tokens": 77,
+      "prompt_tok_s": 104.17385398613813
+    },
+    {
+      "id": 2,
+      "output": "Canberra",
+      "gen_tokens": 3,
+      "gen_tok_s": 4.471905255233993,
+      "prompt_tokens": 41,
+      "prompt_tok_s": 91.82407403259978
+    },
+    {
+      "id": 3,
+      "output": "```python\nimport re\n\ndef is_palindrome(s):\n    \"\"\"\n    Check if the given string is a palindrome, ignoring case and non-alphanumeric characters.\n    \n    Args:\n    s (str): The string to check.\n    \n    Returns:\n    bool: True if s is a palindrome, False otherwise.\n    \"\"\"\n    # Remove non-alphanumeric characters and convert to lowercase\n    cleaned_s = re.sub(r'[^A-Za-z0-9]', '', s).lower()\n    # Check if the cleaned string is equal to its reverse\n    return cleaned_s == cleaned_s[::-1]\n\n# Check function with provided data points\nprint(is_palindrome(\"A man, a plan, a canal: Panama\"))  # True\nprint(is_palindrome(\"race a car\"))  # False\nprint(is_palindrome(\"No lemon, no melon\"))  # True\n```",
+      "gen_tokens": 180,
+      "gen_tok_s": 3.355871553121405,
+      "prompt_tokens": 61,
+      "prompt_tok_s": 90.43588614566701
+    },
+    {
+      "id": 4,
+      "output": "```json\n{\n  \"name\": \"Priya\",\n  \"age\": 29,\n  \"city\": \"Pune\"\n}\n```",
+      "gen_tokens": 31,
+      "gen_tok_s": 4.152678169317281,
+      "prompt_tokens": 70,
+      "prompt_tok_s": 87.76780150434011
+    },
+    {
+      "id": 5,
+      "output": "Yes, all bloops are definitely lazzies because \"all bloops are razzies\" and \"all razzies are lazzies.\"",
+      "gen_tokens": 32,
+      "gen_tok_s": 4.714542551619453,
+      "prompt_tokens": 68,
+      "prompt_tok_s": 107.8882151164082
+    },
+    {
+      "id": 6,
+      "output": "The city council approved extending a bike-lane network by 40 kilometers over three years, aiming to reduce traffic and pollution but facing opposition from shop owners who fear it will reduce parking spaces.",
+      "gen_tokens": 40,
+      "gen_tok_s": 5.282138146135898,
+      "prompt_tokens": 94,
+      "prompt_tok_s": 114.01443616829016
+    },
+    {
+      "id": 7,
+      "output": "La bibliothèque ouvre à neuf heures du matin et se clôture à six heures du soir.",
+      "gen_tokens": 26,
+      "gen_tok_s": 5.391296125648719,
+      "prompt_tokens": 50,
+      "prompt_tok_s": 139.8863563241223
+    },
+    {
+      "id": 8,
+      "output": "The letter 'r' appears 3 times in the word \"strawberry\".",
+      "gen_tokens": 18,
+      "gen_tok_s": 4.067249714445176,
+      "prompt_tokens": 50,
+      "prompt_tok_s": 105.06033615105156
+    },
+    {
+      "id": 9,
+      "output": "408",
+      "gen_tokens": 4,
+      "gen_tok_s": 4.8003475451622695,
+      "prompt_tokens": 45,
+      "prompt_tok_s": 94.44971497174905
+    },
+    {
+      "id": 10,
+      "output": "5 miles is approximately 8.05 kilometres when rounded to two decimal places.",
+      "gen_tokens": 18,
+      "gen_tok_s": 5.011347918954254,
+      "prompt_tokens": 49,
+      "prompt_tok_s": 126.8309602139043
+    }
+  ],
+  "qwen2.5:1.5b-instruct-q8_0": [
+    {
+      "id": 1,
+      "output": "First, calculate the total cost of the pens:\n\\[ 7 \\text{ pens} \\times 12 \\text{ rupees/pen} = 84 \\text{ rupees} \\]\n\nNext, subtract the total cost from the amount paid to find the change:\n\\[ 100 \\text{ rupees} - 84 \\text{ rupees} = 16 \\text{ rupees} \\]\n\nSo, the change you get is 16 rupees.",
+      "gen_tokens": 105,
+      "gen_tok_s": 8.48761047332332,
+      "prompt_tokens": 77,
+      "prompt_tok_s": 78.40493808555506
+    },
+    {
+      "id": 2,
+      "output": "Canberra",
+      "gen_tokens": 3,
+      "gen_tok_s": 14.371464021039824,
+      "prompt_tokens": 41,
+      "prompt_tok_s": 144.28389439826577
+    },
+    {
+      "id": 3,
+      "output": "```python\nimport re\n\ndef is_palindrome(s):\n    \"\"\"\n    Check if the given string is a palindrome, ignoring case and non-alphanumeric characters.\n    \n    Args:\n    s (str): The string to check.\n    \n    Returns:\n    bool: True if s is a palindrome, False otherwise.\n    \"\"\"\n    # Remove non-alphanumeric characters and convert to lowercase\n    cleaned_s = re.sub(r'[^A-Za-z0-9]', '', s).lower()\n    # Check if the cleaned string is equal to its reverse\n    return cleaned_s == cleaned_s[::-1]\n\n# Check function with provided data points\nprint(is_palindrome(\"A man, a plan, a canal: Panama\"))  # True\nprint(is_palindrome(\"race a car\"))  # False\nprint(is_palindrome(\"No lemon, no melon\"))  # True\n```",
+      "gen_tokens": 180,
+      "gen_tok_s": 7.569982914969116,
+      "prompt_tokens": 61,
+      "prompt_tok_s": 123.23406593628596
+    },
+    {
+      "id": 4,
+      "output": "```json\n{\n  \"name\": \"Priya\",\n  \"age\": 29,\n  \"city\": \"Pune\"\n}\n```",
+      "gen_tokens": 31,
+      "gen_tok_s": 5.028859978531635,
+      "prompt_tokens": 70,
+      "prompt_tok_s": 85.57666446612386
+    },
+    {
+      "id": 5,
+      "output": "Yes.\nReason: If all bloops are razzies and all razzies are lazzies, then every bloop must also be a lazzie because it is a subset of the category of razzies.",
+      "gen_tokens": 47,
+      "gen_tok_s": 7.573548013877319,
+      "prompt_tokens": 68,
+      "prompt_tok_s": 68.05396679566897
+    },
+    {
+      "id": 6,
+      "output": "The city council approved extending a bike-lane network by 40 kilometers over three years, aiming to reduce traffic and pollution but potentially impacting local businesses.",
+      "gen_tokens": 32,
+      "gen_tok_s": 8.935133166990937,
+      "prompt_tokens": 94,
+      "prompt_tok_s": 100.084752620304
+    },
+    {
+      "id": 7,
+      "output": "La bibliothèque ouvre à neuf heures du matin et se clôture à six heures du soir.",
+      "gen_tokens": 26,
+      "gen_tok_s": 9.688283213856927,
+      "prompt_tokens": 50,
+      "prompt_tok_s": 133.8698838277148
+    },
+    {
+      "id": 8,
+      "output": "The letter 'r' appears 3 times in the word \"strawberry\".",
+      "gen_tokens": 18,
+      "gen_tok_s": 9.933862550662699,
+      "prompt_tokens": 50,
+      "prompt_tok_s": 143.82032814046067
+    },
+    {
+      "id": 9,
+      "output": "408",
+      "gen_tokens": 4,
+      "gen_tok_s": 12.219897047367377,
+      "prompt_tokens": 45,
+      "prompt_tok_s": 119.12514493559301
+    },
+    {
+      "id": 10,
+      "output": "To convert 5 miles to kilometers, you can use the conversion factor that 1 mile is approximately equal to 1.60934 kilometers. Here's the step-by-step process:\n\n1. Multiply the number of miles by the conversion factor:\n   \\[\n   5 \\text{ miles} \\times 1.60934 \\text{ kilometers/mile} = 8.0467 \\text{ kilometers}\n   \\]\n\n2. Round the result to two decimal places:\n   \\[\n   8.0467 \\text{ kilometers} \\approx 8.05 \\text{ kilometers}\n   \\]\n\nSo, 5 miles is approximately 8.05 kilometers when rounded to two decimal places.",
+      "gen_tokens": 158,
+      "gen_tok_s": 7.792137338886464,
+      "prompt_tokens": 49,
+      "prompt_tok_s": 113.13026834961408
+    }
+  ],
+  "qwen2.5:1.5b-instruct-q4_K_M": [
+    {
+      "id": 1,
+      "output": "First, calculate the total cost of the 7 pens:\n7 pens * 12 rupees per pen = 84 rupees\n\nThen, subtract the total cost from the amount paid to find the change:\n100 rupees - 84 rupees = 16 rupees\n\nSo, you get 16 rupees in change.",
+      "gen_tokens": 75,
+      "gen_tok_s": 14.13199585612196,
+      "prompt_tokens": 77,
+      "prompt_tok_s": 247.00625214526536
+    },
+    {
+      "id": 2,
+      "output": "Canberra",
+      "gen_tokens": 3,
+      "gen_tok_s": 27.37925747453729,
+      "prompt_tokens": 41,
+      "prompt_tok_s": 313.41013395156773
+    },
+    {
+      "id": 3,
+      "output": "```python\nimport re\n\ndef is_palindrome(s):\n    \"\"\"\n    Check if the given string is a palindrome, ignoring case and non-alphanumeric characters.\n    \n    Parameters:\n    s (str): The string to check.\n    \n    Returns:\n    bool: True if s is a palindrome, False otherwise.\n    \"\"\"\n    # Remove non-alphanumeric characters and convert to lowercase\n    cleaned_s = re.sub(r'[^A-Za-z0-9]', '', s).lower()\n    \n    # Check if the cleaned string is equal to its reverse\n    return cleaned_s == cleaned_s[::-1]\n\n# Check function with provided data points\nprint(is_palindrome(\"A man, a plan, a canal: Panama\"))  # True\nprint(is_palindrome(\"racecar\"))  # True\nprint(is_palindrome(\"hello\"))  # False\nprint(is_palindrome(\"No 'x' in Nixon\"))  # True\n```",
+      "gen_tokens": 191,
+      "gen_tok_s": 14.32540755784502,
+      "prompt_tokens": 61,
+      "prompt_tok_s": 271.4464983401714
+    },
+    {
+      "id": 4,
+      "output": "```json\n{\n  \"name\": \"Priya\",\n  \"age\": 29,\n  \"city\": \"Pune\"\n}\n```",
+      "gen_tokens": 31,
+      "gen_tok_s": 17.31298071445645,
+      "prompt_tokens": 70,
+      "prompt_tok_s": 245.08087668930747
+    },
+    {
+      "id": 5,
+      "output": "No, not all bloops are definitely lazzies. The statement \"All bloops are razzies and all razzies are lazzies\" implies that if something is a bloop, it must also be a razzie, and if something is a razzie, it must also be a lazzie. However, it does not necessarily mean that every bloop is a lazzie. There could be bloops that are not lazzies.",
+      "gen_tokens": 98,
+      "gen_tok_s": 13.382608644591645,
+      "prompt_tokens": 68,
+      "prompt_tok_s": 251.43930514008497
+    },
+    {
+      "id": 6,
+      "output": "The city council voted to extend a bike-lane network by 40 kilometers over three years, aiming to reduce traffic and pollution but facing opposition from shop owners concerned about lost parking spaces.",
+      "gen_tokens": 39,
+      "gen_tok_s": 11.339065085361355,
+      "prompt_tokens": 94,
+      "prompt_tok_s": 155.30079616440077
+    },
+    {
+      "id": 7,
+      "output": "La bibliothèque ouvre à neuf heures du matin et se clôture à six heures du soir.",
+      "gen_tokens": 26,
+      "gen_tok_s": 13.329341366483062,
+      "prompt_tokens": 50,
+      "prompt_tok_s": 241.11258993499604
+    },
+    {
+      "id": 8,
+      "output": "The letter \"r\" appears 3 times in the word \"strawberry\".",
+      "gen_tokens": 18,
+      "gen_tok_s": 13.386791253070596,
+      "prompt_tokens": 50,
+      "prompt_tok_s": 207.605847841522
+    },
+    {
+      "id": 9,
+      "output": "408",
+      "gen_tokens": 4,
+      "gen_tok_s": 17.352299396573788,
+      "prompt_tokens": 45,
+      "prompt_tok_s": 246.93254900239248
+    },
+    {
+      "id": 10,
+      "output": "5 miles is approximately 8.05 kilometres when rounded to two decimal places.",
+      "gen_tokens": 18,
+      "gen_tok_s": 12.777838117568887,
+      "prompt_tokens": 49,
+      "prompt_tok_s": 252.79493171957301
+    }
+  ]
+}
