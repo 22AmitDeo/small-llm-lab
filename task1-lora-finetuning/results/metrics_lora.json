@@ -1,0 +1,11 @@
+{
+  "n": 998,
+  "exact_match": 0.7074148296593187,
+  "intent_acc": 0.9569138276553106,
+  "slot_f1": 0.8116308470290772,
+  "slot_precision": 0.8492063492063492,
+  "slot_recall": 0.7772397094430993,
+  "valid_json": 1.0,
+  "setting": "lora",
+  "seconds": 92.8
+}

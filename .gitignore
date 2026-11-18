@@ -13,3 +13,8 @@ checkpoints/
 outputs/
 wandb/
 *.faiss
+# raw downloads (re-created by the commands in each README)
+task1-lora-finetuning/data/raw/
+task2-rag-from-scratch/data/*.pdf
+*.log
+__pycache__/

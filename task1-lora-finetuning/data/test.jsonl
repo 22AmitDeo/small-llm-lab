@@ -1,0 +1,998 @@
+{"id": "0", "text": "wake me up at five am this week", "target": {"intent": "alarm_set", "slots": {"time": "five am", "date": "this week"}}}
+{"id": "8", "text": "pink is all we need", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "pink"}}}
+{"id": "14", "text": "and the darkness has fallen", "target": {"intent": "iot_hue_lighton", "slots": {}}}
+{"id": "19", "text": "olly turn the lights off in the bedroom", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "bedroom"}}}
+{"id": "27", "text": "it's dirty here make some noise", "target": {"intent": "iot_cleaning", "slots": {}}}
+{"id": "31", "text": "hoover the hallway", "target": {"intent": "iot_cleaning", "slots": {"house_place": "hallway"}}}
+{"id": "59", "text": "cancel my seven am alarm", "target": {"intent": "alarm_remove", "slots": {"time": "seven am"}}}
+{"id": "61", "text": "what alarms i have set", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "63", "text": "tell me about my alarms", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "80", "text": "set lights brightness higher", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "100", "text": "what's the week's forecast", "target": {"intent": "weather_query", "slots": {"time": "week's"}}}
+{"id": "102", "text": "what's this week's weather", "target": {"intent": "weather_query", "slots": {"date": "this week's"}}}
+{"id": "103", "text": "tell me the weather this week", "target": {"intent": "weather_query", "slots": {"date": "this week"}}}
+{"id": "158", "text": "lower the lights", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "174", "text": "set wake up thursday seven am", "target": {"intent": "alarm_set", "slots": {"date": "thursday", "time": "seven am"}}}
+{"id": "201", "text": "delete the alarm i just set", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "216", "text": "how is the weather like today", "target": {"intent": "weather_query", "slots": {"date": "today"}}}
+{"id": "219", "text": "should i bring an umbrella tomorrow", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "umbrella", "date": "tomorrow"}}}
+{"id": "263", "text": "let's have the lights blue", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "blue"}}}
+{"id": "279", "text": "what is today's forecast for berlin", "target": {"intent": "weather_query", "slots": {"date": "today's", "place_name": "berlin"}}}
+{"id": "286", "text": "light up the lights in the kitchen", "target": {"intent": "iot_hue_lighton", "slots": {"house_place": "kitchen"}}}
+{"id": "290", "text": "start a vacuum cleaner", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum cleaner"}}}
+{"id": "292", "text": "turn on the vacuum cleaner", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum cleaner"}}}
+{"id": "299", "text": "what is the weather", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "319", "text": "tell me the weather in barcelona in two days from now", "target": {"intent": "weather_query", "slots": {"place_name": "barcelona", "time": "two days from now"}}}
+{"id": "321", "text": "disable my okug", "target": {"intent": "iot_wemo_off", "slots": {"device_type": "okug"}}}
+{"id": "322", "text": "enable my plug", "target": {"intent": "iot_wemo_on", "slots": {"device_type": "plug"}}}
+{"id": "333", "text": "what is the weather condition in new york", "target": {"intent": "weather_query", "slots": {"place_name": "new york"}}}
+{"id": "334", "text": "i wish to know the weather in san fransico", "target": {"intent": "weather_query", "slots": {"place_name": "san fransico"}}}
+{"id": "344", "text": "will it be rainy tomorrow", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rainy", "date": "tomorrow"}}}
+{"id": "348", "text": "will it rain tomorrow", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain", "date": "tomorrow"}}}
+{"id": "369", "text": "switch off the lights", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "389", "text": "turn the smart plug on", "target": {"intent": "iot_wemo_on", "slots": {"device_type": "smart plug"}}}
+{"id": "399", "text": "remove the first alarm", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "426", "text": "power up the plug socket one", "target": {"intent": "iot_wemo_on", "slots": {"device_type": "plug socket one"}}}
+{"id": "427", "text": "turn off the lights in the bathroom", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "bathroom"}}}
+{"id": "428", "text": "turn off the bathroom lights", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "bathroom"}}}
+{"id": "430", "text": "what is the weather like right now", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "448", "text": "run coffee maker", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee maker"}}}
+{"id": "456", "text": "change the bedroom lights to green", "target": {"intent": "iot_hue_lightchange", "slots": {"house_place": "bedroom", "color_type": "green"}}}
+{"id": "468", "text": "change the lights to dim", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "491", "text": "is it cold outside", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "cold"}}}
+{"id": "508", "text": "what alarms are set", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "512", "text": "by get marks", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "533", "text": "set an alarm for nine am", "target": {"intent": "alarm_set", "slots": {"time": "nine am"}}}
+{"id": "560", "text": "turn off eight am alarm", "target": {"intent": "alarm_remove", "slots": {"time": "eight am"}}}
+{"id": "564", "text": "change light color", "target": {"intent": "iot_hue_lightchange", "slots": {}}}
+{"id": "590", "text": "what is the current weather", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "612", "text": "please ring the wake up alarm at eight am next saturday", "target": {"intent": "alarm_set", "slots": {"alarm_type": "wake up", "time": "eight am", "date": "saturday"}}}
+{"id": "635", "text": "please start vacuum cleaner", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum cleaner"}}}
+{"id": "651", "text": "turn off room lights", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "room"}}}
+{"id": "665", "text": "can you lower the lights", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "702", "text": "hi can you please turn lower the lights", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "726", "text": "summarize week's weather details", "target": {"intent": "weather_query", "slots": {"time": "week's"}}}
+{"id": "730", "text": "turn the lights off", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "738", "text": "how cold is it outside today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "cold", "date": "today"}}}
+{"id": "764", "text": "what is the weather forecast for this week", "target": {"intent": "weather_query", "slots": {"date": "this week"}}}
+{"id": "790", "text": "mild or heavy weather", "target": {"intent": "weather_query", "slots": {"weather_descriptor": ["mild", "heavy"]}}}
+{"id": "796", "text": "confirm my alarm settings", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "826", "text": "what is the current temperature outside", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "temperature"}}}
+{"id": "832", "text": "hey what will be the predicted weather for tomorrow", "target": {"intent": "weather_query", "slots": {"date": "tomorrow"}}}
+{"id": "843", "text": "start the robot roomba", "target": {"intent": "iot_cleaning", "slots": {"device_type": "robot roomba"}}}
+{"id": "861", "text": "my set alarms", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "862", "text": "alarm settings", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "864", "text": "robot vacuum the living room now", "target": {"intent": "iot_cleaning", "slots": {"house_place": "living room"}}}
+{"id": "884", "text": "set alarm for eight am", "target": {"intent": "alarm_set", "slots": {"time": "eight am"}}}
+{"id": "897", "text": "make the house lights amber at six p. m.", "target": {"intent": "iot_hue_lightchange", "slots": {"house_place": "house", "color_type": "amber", "time": "six p. m."}}}
+{"id": "914", "text": "please turn lights off", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "920", "text": "please remove my alarm", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "939", "text": "set my alarm for seven am", "target": {"intent": "alarm_set", "slots": {"time": "seven am"}}}
+{"id": "940", "text": "turn my morning alarm on", "target": {"intent": "alarm_set", "slots": {"timeofday": "morning"}}}
+{"id": "951", "text": "what's the weather like right now in new york", "target": {"intent": "weather_query", "slots": {"place_name": "new york"}}}
+{"id": "962", "text": "increase the brightness of the lights", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "964", "text": "i want dimmer lights", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "997", "text": "turn the living room's light off", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "living room's"}}}
+{"id": "999", "text": "could you turn the light off", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "1030", "text": "dim the lights in the living room", "target": {"intent": "iot_hue_lightdim", "slots": {"house_place": "living room"}}}
+{"id": "1059", "text": "turn on the robot vacuum cleaner", "target": {"intent": "iot_cleaning", "slots": {"device_type": "robot vacuum cleaner"}}}
+{"id": "1071", "text": "brighten the lights in the hallway", "target": {"intent": "iot_hue_lightup", "slots": {"house_place": "hallway"}}}
+{"id": "1072", "text": "please turn up the screen brightness all the way", "target": {"intent": "iot_hue_lightup", "slots": {"device_type": "screen", "change_amount": "all the way"}}}
+{"id": "1090", "text": "can you increase the brightness in the room", "target": {"intent": "iot_hue_lightup", "slots": {"house_place": "room"}}}
+{"id": "1151", "text": "start vacuum cleaner", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum cleaner"}}}
+{"id": "1160", "text": "how cold will it get each night this week", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "cold", "general_frequency": "each night", "date": "this week"}}}
+{"id": "1205", "text": "disable alarm for three p. m.", "target": {"intent": "alarm_remove", "slots": {"time": "three p. m."}}}
+{"id": "1217", "text": "olly change the lighting to blue", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "blue"}}}
+{"id": "1249", "text": "how is the weather likely to be this week", "target": {"intent": "weather_query", "slots": {"date": "this week"}}}
+{"id": "1264", "text": "is my alarm set for tomorrow morning", "target": {"intent": "alarm_query", "slots": {"date": "tomorrow", "timeofday": "morning"}}}
+{"id": "1276", "text": "i want a coffee", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "1308", "text": "get todays climate forecast here", "target": {"intent": "weather_query", "slots": {"date": "todays"}}}
+{"id": "1351", "text": "will it be nice outside this week", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "nice", "date": "this week"}}}
+{"id": "1360", "text": "please raise the light i am not comfortable at this", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "1377", "text": "please turn off the light of my son's room", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "my son's room"}}}
+{"id": "1400", "text": "i mostly pay attention", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "1401", "text": "i occasionally pay attention", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "1404", "text": "can i please have the weather for tomorrow here in costa mesa", "target": {"intent": "weather_query", "slots": {"date": "tomorrow", "place_name": "costa mesa"}}}
+{"id": "1413", "text": "can you make me some coffee olly", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "1427", "text": "change the lights to blue olly", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "blue"}}}
+{"id": "1428", "text": "i'd like some red lighting", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "red"}}}
+{"id": "1452", "text": "remove the alarm for tomorrow", "target": {"intent": "alarm_remove", "slots": {"date": "tomorrow"}}}
+{"id": "1454", "text": "set the alarm off", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "1458", "text": "how hot is it in quebec", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "hot", "place_name": "quebec"}}}
+{"id": "1483", "text": "what alarms did i set", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "1511", "text": "show me the available colors of lights", "target": {"intent": "iot_hue_lightchange", "slots": {}}}
+{"id": "1513", "text": "what's the temperature outside", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "temperature"}}}
+{"id": "1542", "text": "the sun is shinning bright will we have this weather for the rest of the day", "target": {"intent": "weather_query", "slots": {"time": "rest of the day"}}}
+{"id": "1547", "text": "what's the weather for my location this week", "target": {"intent": "weather_query", "slots": {"date": "this week"}}}
+{"id": "1549", "text": "will it rain this week", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain", "date": "this week"}}}
+{"id": "1551", "text": "turn on wemo", "target": {"intent": "iot_wemo_on", "slots": {"device_type": "wemo"}}}
+{"id": "1554", "text": "turn off the lamps", "target": {"intent": "iot_hue_lightoff", "slots": {"device_type": "lamps"}}}
+{"id": "1575", "text": "start the vacuum cleaner", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum cleaner"}}}
+{"id": "1589", "text": "is it going to be sunny next tuesday", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "sunny", "date": "tuesday"}}}
+{"id": "1635", "text": "what times do my alarms go off", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "1646", "text": "are there any alarms going off today", "target": {"intent": "alarm_query", "slots": {"date": "today"}}}
+{"id": "1653", "text": "when is the next time it will rain", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain"}}}
+{"id": "1655", "text": "will it snow tomorrow at noon", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "snow", "date": "tomorrow", "timeofday": "noon"}}}
+{"id": "1658", "text": "i want to see all set alarms", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "1675", "text": "remove tuesday alarm of nine am", "target": {"intent": "alarm_remove", "slots": {"date": "tuesday", "time": "nine am"}}}
+{"id": "1683", "text": "tomorrow's temperature is to be hot yes or no", "target": {"intent": "weather_query", "slots": {"date": "tomorrow's", "weather_descriptor": ["temperature", "hot"]}}}
+{"id": "1684", "text": "yes or no tomorrow's temperature is to be hot", "target": {"intent": "weather_query", "slots": {"date": "tomorrow's", "weather_descriptor": ["temperature", "hot"]}}}
+{"id": "1703", "text": "my vacuum cleaner should start between ten to eleven am everyday", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum cleaner", "time": ["ten", "eleven am"], "general_frequency": "everyday"}}}
+{"id": "1719", "text": "set alarm of only monday morning six am", "target": {"intent": "alarm_set", "slots": {"date": "monday", "timeofday": "morning", "time": "six am"}}}
+{"id": "1722", "text": "what is the minimum temperature of london", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "temperature", "place_name": "london"}}}
+{"id": "1750", "text": "turn off all lights", "target": {"intent": "iot_hue_lightoff", "slots": {"device_type": "all lights"}}}
+{"id": "1756", "text": "brighten the lights", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "1774", "text": "turn off the alarm", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "1778", "text": "please dim the lights", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "1784", "text": "turn off the dining room", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "dining room"}}}
+{"id": "1786", "text": "switch off the master's bedroom", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "master's bedroom"}}}
+{"id": "1804", "text": "more lights please", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "1812", "text": "please make me coffee without sweetener", "target": {"intent": "iot_coffee", "slots": {"coffee_type": "without sweetener"}}}
+{"id": "1862", "text": "when does my alarm go off", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "1866", "text": "weather report now", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "1913", "text": "wake me up at five am", "target": {"intent": "alarm_set", "slots": {"time": "five am"}}}
+{"id": "1924", "text": "turn on vacuum cleaner", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum cleaner"}}}
+{"id": "1933", "text": "will there be a fall in temperature by tonight", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "temperature", "timeofday": "tonight"}}}
+{"id": "1941", "text": "clean my house", "target": {"intent": "iot_cleaning", "slots": {"house_place": "house"}}}
+{"id": "1960", "text": "change the light to pink color", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "pink"}}}
+{"id": "1982", "text": "set alarm at six thirty am", "target": {"intent": "alarm_set", "slots": {"time": "six thirty am"}}}
+{"id": "1993", "text": "can you turn up the lights", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "2016", "text": "lower lights in kitchen", "target": {"intent": "iot_hue_lightdim", "slots": {"house_place": "kitchen"}}}
+{"id": "2026", "text": "coffee make now", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "2075", "text": "i want more light", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "2082", "text": "raise the light", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "2128", "text": "color of light should be dimmed bright", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "2134", "text": "wake me up", "target": {"intent": "alarm_set", "slots": {}}}
+{"id": "2160", "text": "i'm going to sleep now", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "2166", "text": "set an alarm for tomorrow at six in the morning", "target": {"intent": "alarm_set", "slots": {"date": "tomorrow", "time": "six", "timeofday": "morning"}}}
+{"id": "2167", "text": "get me up in half an hour", "target": {"intent": "alarm_set", "slots": {"time": "half an hour"}}}
+{"id": "2168", "text": "turn off my alarm", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "2178", "text": "what is the current weather condition in my place", "target": {"intent": "weather_query", "slots": {"place_name": "my place"}}}
+{"id": "2220", "text": "weather in paris", "target": {"intent": "weather_query", "slots": {"place_name": "paris"}}}
+{"id": "2230", "text": "turn off kitchen light", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "kitchen"}}}
+{"id": "2234", "text": "i can't see turn up the lights", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "2258", "text": "do i need a sweater today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "sweater", "date": "today"}}}
+{"id": "2263", "text": "show me the dim color", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "2264", "text": "light color for study room", "target": {"intent": "iot_hue_lightup", "slots": {"house_place": "study room"}}}
+{"id": "2265", "text": "tell me what the weather is doing in grand rapids mi right now", "target": {"intent": "weather_query", "slots": {"place_name": "grand rapids mi"}}}
+{"id": "2283", "text": "i need to change my house lights color to blue", "target": {"intent": "iot_hue_lightchange", "slots": {"house_place": "house", "color_type": "blue"}}}
+{"id": "2288", "text": "start coffee at six am", "target": {"intent": "iot_coffee", "slots": {"time": "six am"}}}
+{"id": "2298", "text": "put the lights off now", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "2311", "text": "alexa turn the lights down to seven", "target": {"intent": "iot_hue_lightdim", "slots": {"change_amount": "to seven"}}}
+{"id": "2320", "text": "what is the weather this friday", "target": {"intent": "weather_query", "slots": {"date": "friday"}}}
+{"id": "2322", "text": "what's the weather like tomorrow", "target": {"intent": "weather_query", "slots": {"date": "tomorrow"}}}
+{"id": "2334", "text": "add an alarm for tomorrow morning at six am", "target": {"intent": "alarm_set", "slots": {"date": "tomorrow", "timeofday": "morning", "time": "six am"}}}
+{"id": "2350", "text": "put dark colors instead of light ones in the house", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "dark", "house_place": "house"}}}
+{"id": "2351", "text": "olly put dark colors instead of light ones in the house", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "dark", "house_place": "house"}}}
+{"id": "2403", "text": "give me more light", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "2423", "text": "please give me todays forecast for new york city", "target": {"intent": "weather_query", "slots": {"date": "todays", "place_name": "new york city"}}}
+{"id": "2434", "text": "start robot vacuum cleaner", "target": {"intent": "iot_cleaning", "slots": {"device_type": "robot vacuum cleaner"}}}
+{"id": "2441", "text": "turn off the shed light", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "shed"}}}
+{"id": "2512", "text": "how do i set my coffee machine to make coffee", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee machine"}}}
+{"id": "2517", "text": "how do i start the robot vacuum cleaner", "target": {"intent": "iot_cleaning", "slots": {"device_type": "robot vacuum cleaner"}}}
+{"id": "2540", "text": "make the room light blue", "target": {"intent": "iot_hue_lightchange", "slots": {"house_place": "room", "color_type": "blue"}}}
+{"id": "2542", "text": "make the bedroom lights red and the hall lights normal color please", "target": {"intent": "iot_hue_lightchange", "slots": {"house_place": ["bedroom", "hall"], "color_type": ["red", "normal"]}}}
+{"id": "2545", "text": "how is the weather", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "2551", "text": "change the lights in my home to green", "target": {"intent": "iot_hue_lightchange", "slots": {"house_place": "home", "color_type": "green"}}}
+{"id": "2564", "text": "please set the alarm for next friday at six thirty am", "target": {"intent": "alarm_set", "slots": {"date": "friday", "time": "six thirty am"}}}
+{"id": "2566", "text": "turn off my wemo socket", "target": {"intent": "iot_wemo_off", "slots": {"device_type": "wemo socket"}}}
+{"id": "2578", "text": "turn off the porch light", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "porch"}}}
+{"id": "2591", "text": "turn up the brightness", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "2611", "text": "current weather forecast", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "2615", "text": "will i need to wear a jacket next wednesday", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "jacket", "date": "wednesday"}}}
+{"id": "2673", "text": "did i remember to set a reminder alarm for my next doctor's appointment", "target": {"intent": "alarm_query", "slots": {"event_name": "doctor's appointment"}}}
+{"id": "2678", "text": "is it raining tonight", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "raining", "timeofday": "tonight"}}}
+{"id": "2679", "text": "will the temperature stay about the same or is it going to get colder", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "temperature"}}}
+{"id": "2690", "text": "turn off the socket", "target": {"intent": "iot_wemo_off", "slots": {"device_type": "socket"}}}
+{"id": "2711", "text": "shut the lights off", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "2733", "text": "start a pot of coffee please", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "2753", "text": "i need a cup of coffee", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "2774", "text": "shut off lights", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "2775", "text": "discontinue use of lights", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "2777", "text": "should i bring an umbrella today", "target": {"intent": "weather_query", "slots": {"date": "today"}}}
+{"id": "2812", "text": "can you make me a cup of coffee", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "2816", "text": "set the living room lights to fifty percent", "target": {"intent": "iot_hue_lightchange", "slots": {"house_place": "living room", "change_amount": "to fifty percent"}}}
+{"id": "2868", "text": "please get the coffee machine to make me some coffee", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee machine"}}}
+{"id": "2870", "text": "olly tell me my alarms", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "2890", "text": "current weather", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "2903", "text": "please start the vacuum cleaner", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum cleaner"}}}
+{"id": "2906", "text": "brightness ninety percent", "target": {"intent": "iot_hue_lightchange", "slots": {"change_amount": "ninety percent"}}}
+{"id": "2917", "text": "weekly weather report", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "2957", "text": "is there an alarm for ten am", "target": {"intent": "alarm_query", "slots": {"time": "ten am"}}}
+{"id": "2959", "text": "initialize the robot vacuum", "target": {"intent": "iot_cleaning", "slots": {"device_type": "robot vacuum"}}}
+{"id": "2960", "text": "start the vacuum", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum"}}}
+{"id": "2965", "text": "turn office lights off", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "office"}}}
+{"id": "2975", "text": "please change the light colors to red", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "red"}}}
+{"id": "2983", "text": "remove set alarm", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "2985", "text": "cancel alarm", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "3008", "text": "can you raise the lights for me please", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "3011", "text": "retrieve the light for me", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "3034", "text": "tell me the temperature", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "temperature"}}}
+{"id": "3050", "text": "change my light color to blue and please turn off the kitchen light", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "blue", "house_place": "kitchen"}}}
+{"id": "3077", "text": "shut off the socket", "target": {"intent": "iot_wemo_off", "slots": {}}}
+{"id": "3096", "text": "how's the weather like in new jersey", "target": {"intent": "weather_query", "slots": {"place_name": "new jersey"}}}
+{"id": "3098", "text": "make the lights off", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "3138", "text": "make me a cup of coffee with salted carmel flavored cream", "target": {"intent": "iot_coffee", "slots": {"coffee_type": "salted carmel flavored cream"}}}
+{"id": "3161", "text": "do i have any alarms set for six am tomorrow", "target": {"intent": "alarm_query", "slots": {"time": "six am", "date": "tomorrow"}}}
+{"id": "3162", "text": "show me my alarms i have set", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "3167", "text": "turn my bedroom lights off", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "bedroom"}}}
+{"id": "3184", "text": "stop start the juice", "target": {"intent": "iot_wemo_on", "slots": {}}}
+{"id": "3196", "text": "hey olly can you please make me a creamy coffee", "target": {"intent": "iot_coffee", "slots": {"coffee_type": "creamy"}}}
+{"id": "3212", "text": "remind me to do something then", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "3213", "text": "set a new alarm for that time", "target": {"intent": "alarm_set", "slots": {}}}
+{"id": "3222", "text": "i want a lower light", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "3253", "text": "should we expect rain this afternoon", "target": {"intent": "weather_query", "slots": {"timeofday": "afternoon"}}}
+{"id": "3280", "text": "lower the lights please", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "3298", "text": "power off the wemo plug", "target": {"intent": "iot_wemo_off", "slots": {"device_type": "wemo plug"}}}
+{"id": "3305", "text": "what is the weather this week for miami", "target": {"intent": "weather_query", "slots": {"date": "this week", "place_name": "miami"}}}
+{"id": "3306", "text": "what is the forecast for the week", "target": {"intent": "weather_query", "slots": {"date": "week"}}}
+{"id": "3320", "text": "please activate my coffee pot for me", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee pot"}}}
+{"id": "3321", "text": "please make me a cup of coffee", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "3323", "text": "please turn on my coffee pot", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee pot"}}}
+{"id": "3326", "text": "turn the plug off", "target": {"intent": "iot_wemo_off", "slots": {}}}
+{"id": "3337", "text": "report weather for thirty three thousand seven hundred and seventy four", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "3338", "text": "report weather for largo", "target": {"intent": "weather_query", "slots": {"place_name": "largo"}}}
+{"id": "3378", "text": "no lights in the kitchen", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "kitchen"}}}
+{"id": "3386", "text": "turn down the lights to medium", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "3387", "text": "make it red in here", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "red"}}}
+{"id": "3398", "text": "please set my alarm for five p. m.", "target": {"intent": "alarm_set", "slots": {"time": "five p. m."}}}
+{"id": "3406", "text": "what is the ten day forecast", "target": {"intent": "weather_query", "slots": {"date": "ten day"}}}
+{"id": "3407", "text": "are there any forecasts of rain or snow this week", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain or snow", "date": "this week"}}}
+{"id": "3408", "text": "is the weather going to be nice this weekend", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "nice", "date": "this weekend"}}}
+{"id": "3418", "text": "can you set my coffee machine to make me coffee at seven am", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee machine", "time": "seven am"}}}
+{"id": "3426", "text": "what degree is it outside", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "degree"}}}
+{"id": "3435", "text": "remove the latest alarm", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "3447", "text": "does the weather call for rain saturday", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain", "date": "saturday"}}}
+{"id": "3503", "text": "what is the weather in pittsburgh", "target": {"intent": "weather_query", "slots": {"place_name": "pittsburgh"}}}
+{"id": "3507", "text": "is there snow in the forecast", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "snow"}}}
+{"id": "3516", "text": "what is the chance of precipitation in todays weather", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "precipitation", "date": "todays"}}}
+{"id": "3522", "text": "please turn on my balcony lights", "target": {"intent": "iot_hue_lighton", "slots": {"house_place": "balcony"}}}
+{"id": "3542", "text": "change the lights in the living room to green and red", "target": {"intent": "iot_hue_lightchange", "slots": {"house_place": "living room", "color_type": "green and red"}}}
+{"id": "3543", "text": "i want the light to be a little more red ish", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "red ish"}}}
+{"id": "3568", "text": "set my coffee machine", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee machine"}}}
+{"id": "3570", "text": "please turn off the lights in patio", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "patio"}}}
+{"id": "3586", "text": "what is the weather in beijing", "target": {"intent": "weather_query", "slots": {"place_name": "beijing"}}}
+{"id": "3595", "text": "brighter", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "3600", "text": "remind me after ten minutes", "target": {"intent": "calendar_set", "slots": {"time": "after ten minutes"}}}
+{"id": "3614", "text": "it is a sunny day today right", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "sunny", "date": "today"}}}
+{"id": "3674", "text": "i would like the like in the kitchen to be a different color", "target": {"intent": "iot_hue_lightchange", "slots": {"house_place": "kitchen"}}}
+{"id": "3694", "text": "i need an alarm set for five hundred and thirty am tomorrow", "target": {"intent": "alarm_set", "slots": {"time": "five hundred and thirty am", "date": "tomorrow"}}}
+{"id": "3695", "text": "i want an alarm for three today", "target": {"intent": "alarm_set", "slots": {"time": "three", "date": "today"}}}
+{"id": "3700", "text": "lights at percent", "target": {"intent": "iot_hue_lightchange", "slots": {}}}
+{"id": "3702", "text": "olly do i have an alarm set for tomorrow", "target": {"intent": "alarm_query", "slots": {"date": "tomorrow"}}}
+{"id": "3734", "text": "turn the lights to red color", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "red"}}}
+{"id": "3761", "text": "get me up at eight am", "target": {"intent": "alarm_set", "slots": {"time": "eight am"}}}
+{"id": "3762", "text": "raise the lights", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "3771", "text": "tell me about alarms", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "3774", "text": "disable smart socket", "target": {"intent": "iot_wemo_off", "slots": {"device_type": "smart socket"}}}
+{"id": "3775", "text": "i want the smart socket off now", "target": {"intent": "iot_wemo_off", "slots": {"device_type": "smart socket"}}}
+{"id": "3784", "text": "give me a weather report for las vegas", "target": {"intent": "weather_query", "slots": {"place_name": "las vegas"}}}
+{"id": "3785", "text": "turn off the bathroom light please", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "bathroom"}}}
+{"id": "3829", "text": "please remove the alarm that is set for weekdays at nine", "target": {"intent": "alarm_remove", "slots": {"date": "weekdays", "time": "nine"}}}
+{"id": "3834", "text": "turn down lights", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "3841", "text": "activate the roomba", "target": {"intent": "iot_cleaning", "slots": {"device_type": "roomba"}}}
+{"id": "3852", "text": "what kind of weather are they having in orange tx right now", "target": {"intent": "weather_query", "slots": {"place_name": "orange tx"}}}
+{"id": "3870", "text": "what is the wake up time for my alarm i have set for the flight this weekend", "target": {"intent": "alarm_query", "slots": {"alarm_type": "wake up", "date": "this weekend"}}}
+{"id": "3883", "text": "brighten up the lighting", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "3884", "text": "list current set alarms", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "3886", "text": "any alarms currently listed", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "3936", "text": "what is the temperature", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "temperature"}}}
+{"id": "3986", "text": "set an alarm at six am", "target": {"intent": "alarm_set", "slots": {"time": "six am"}}}
+{"id": "3993", "text": "can you make the lights go out", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "4013", "text": "let's suck out the dust", "target": {"intent": "iot_cleaning", "slots": {}}}
+{"id": "4017", "text": "get rid of my current alarms", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "4024", "text": "please power down", "target": {"intent": "iot_wemo_off", "slots": {}}}
+{"id": "4026", "text": "power off", "target": {"intent": "iot_wemo_off", "slots": {}}}
+{"id": "4043", "text": "run the vacuum", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum"}}}
+{"id": "4077", "text": "turn the kitchen lights off", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "kitchen"}}}
+{"id": "4081", "text": "i want to set an alarm when i'm driving home tomorrow to remember to stop at the store and get food", "target": {"intent": "alarm_set", "slots": {"date": "tomorrow", "event_name": "stop at the store and get food"}}}
+{"id": "4084", "text": "make a coffee", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "4088", "text": "turn off overhead light", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "4104", "text": "what is the weather going to be like today in tucson", "target": {"intent": "weather_query", "slots": {"date": "today", "place_name": "tucson"}}}
+{"id": "4121", "text": "what time have you set the alarm", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "4130", "text": "is my reminder alarm set for dance class", "target": {"intent": "alarm_query", "slots": {"event_name": "dance class"}}}
+{"id": "4132", "text": "tell me the percentage of the chance of rain in seattle washington for today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain", "place_name": "seattle washington", "date": "today"}}}
+{"id": "4145", "text": "what alarms did i set today", "target": {"intent": "alarm_query", "slots": {"date": "today"}}}
+{"id": "4154", "text": "turn off my wifi", "target": {"intent": "iot_wemo_off", "slots": {}}}
+{"id": "4168", "text": "please check the weather in kansas", "target": {"intent": "weather_query", "slots": {"place_name": "kansas"}}}
+{"id": "4171", "text": "turn off the lights in the kitchen", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "kitchen"}}}
+{"id": "4173", "text": "activate the vacuum cleaner and use it", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum cleaner"}}}
+{"id": "4174", "text": "hey olly chance the current light settings", "target": {"intent": "iot_hue_lightchange", "slots": {}}}
+{"id": "4201", "text": "power on wemo", "target": {"intent": "iot_wemo_on", "slots": {"device_type": "wemo"}}}
+{"id": "4212", "text": "am i going to be able to mow the grass this evening", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "mow the grass", "timeofday": "this evening"}}}
+{"id": "4227", "text": "is there any rain in the forecast for the next week", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain", "date": "next week"}}}
+{"id": "4240", "text": "switch on the roomba", "target": {"intent": "iot_cleaning", "slots": {"device_type": "roomba"}}}
+{"id": "4244", "text": "olly turn on the coffee machine to make me some coffee", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee machine"}}}
+{"id": "4247", "text": "house change all lights to blue", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "blue"}}}
+{"id": "4248", "text": "house lights blue", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "blue"}}}
+{"id": "4249", "text": "house can you make all the lights in the house blue", "target": {"intent": "iot_hue_lightchange", "slots": {"house_place": "house", "color_type": "blue"}}}
+{"id": "4266", "text": "what is todays weather", "target": {"intent": "weather_query", "slots": {"date": "todays"}}}
+{"id": "4271", "text": "prepare coffee now", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "4272", "text": "my coffee is cold please make more coffee", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "4283", "text": "increase the brightness in this room", "target": {"intent": "iot_hue_lightup", "slots": {"house_place": "this room"}}}
+{"id": "4290", "text": "should i bring a jacket with me tonight", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "jacket", "timeofday": "tonight"}}}
+{"id": "4299", "text": "make the light in here redder", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "redder"}}}
+{"id": "4312", "text": "will the weather be less than ten degree in paris", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "less than ten degree", "place_name": "paris"}}}
+{"id": "4313", "text": "will there be rain tomorrow in rome", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain", "date": "tomorrow", "place_name": "rome"}}}
+{"id": "4319", "text": "i need to get up at ten tomorrow", "target": {"intent": "alarm_set", "slots": {"time": "ten", "date": "tomorrow"}}}
+{"id": "4346", "text": "turn lights off", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "4347", "text": "cease operating lights", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "4355", "text": "how is the weather where i am", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "4375", "text": "review all alarms", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "4376", "text": "how is it outside today", "target": {"intent": "weather_query", "slots": {"date": "today"}}}
+{"id": "4377", "text": "what's the current weather", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "4383", "text": "what will the weather be tomorrow", "target": {"intent": "weather_query", "slots": {"date": "tomorrow"}}}
+{"id": "4402", "text": "will i need to carry around a brolly today", "target": {"intent": "weather_query", "slots": {"date": "today"}}}
+{"id": "4412", "text": "what's the weather in portland", "target": {"intent": "weather_query", "slots": {"place_name": "portland"}}}
+{"id": "4436", "text": "what jacket should i wear", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "jacket"}}}
+{"id": "4439", "text": "how is the weather in san francisco", "target": {"intent": "weather_query", "slots": {"place_name": "san francisco"}}}
+{"id": "4442", "text": "make coffee at three", "target": {"intent": "iot_coffee", "slots": {"time": "three"}}}
+{"id": "4443", "text": "start the coffee machine at three", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee machine", "time": "three"}}}
+{"id": "4449", "text": "is it going to rain at one p. m. today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "going to rain", "time": "one p. m.", "date": "today"}}}
+{"id": "4482", "text": "will i need to shovel my driveway this morning", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "driveway", "timeofday": "morning"}}}
+{"id": "4486", "text": "give me the weather forecast for this week", "target": {"intent": "weather_query", "slots": {"date": "this week"}}}
+{"id": "4487", "text": "will it be raining on thursday", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "raining", "date": "thursday"}}}
+{"id": "4516", "text": "olly change the color of the lights", "target": {"intent": "iot_hue_lightchange", "slots": {}}}
+{"id": "4524", "text": "olly what is the weather forecast for today", "target": {"intent": "weather_query", "slots": {"date": "today"}}}
+{"id": "4554", "text": "can you make some coffee", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "4589", "text": "set a notification for sports game", "target": {"intent": "calendar_set", "slots": {"event_name": "sports game"}}}
+{"id": "4601", "text": "tell me when it is five p. m.", "target": {"intent": "alarm_set", "slots": {"time": "five p. m."}}}
+{"id": "4614", "text": "will the temperature be higher than forty tomorrow", "target": {"intent": "weather_query", "slots": {"weather_descriptor": ["temperature", "higher than forty"], "date": "tomorrow"}}}
+{"id": "4618", "text": "enable smart socket", "target": {"intent": "iot_wemo_on", "slots": {"device_type": "smart socket"}}}
+{"id": "4620", "text": "turn on new smart socket", "target": {"intent": "iot_wemo_on", "slots": {"device_type": "smart socket"}}}
+{"id": "4654", "text": "set an alarm for six thirty am", "target": {"intent": "alarm_set", "slots": {"time": "six thirty am"}}}
+{"id": "4673", "text": "please list all my alarms", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "4680", "text": "should i wear sandals or shoes with socks", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "sandals or shoes with socks"}}}
+{"id": "4689", "text": "do you know the weather", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "4712", "text": "do not wake me up tomorrow", "target": {"intent": "alarm_remove", "slots": {"date": "tomorrow"}}}
+{"id": "4764", "text": "is it going to rain on monday", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain", "date": "monday"}}}
+{"id": "4776", "text": "please tell me what alarms are on", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "4784", "text": "do i need a jacket", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "jacket"}}}
+{"id": "4798", "text": "i want coffee everyday", "target": {"intent": "iot_coffee", "slots": {"date": "everyday"}}}
+{"id": "4799", "text": "please turn on the wemo plug socket", "target": {"intent": "iot_wemo_on", "slots": {"device_type": "wemo plug socket"}}}
+{"id": "4803", "text": "change the lights to a different hue", "target": {"intent": "iot_hue_lightchange", "slots": {}}}
+{"id": "4826", "text": "make the lights pink", "target": {"intent": "iot_hue_lightchange", "slots": {"color_type": "pink"}}}
+{"id": "4848", "text": "wake me up in thirty minutes", "target": {"intent": "alarm_set", "slots": {"time": "thirty minutes"}}}
+{"id": "4851", "text": "is my alarm set", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "4871", "text": "how is it outside", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "4890", "text": "set notifications on the current weather disasters in america", "target": {"intent": "calendar_set", "slots": {"event_name": "weather disasters", "place_name": "america"}}}
+{"id": "4896", "text": "lower the overhead lights", "target": {"intent": "iot_hue_lightdim", "slots": {"house_place": "overhead"}}}
+{"id": "4917", "text": "temperature outside", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "temperature"}}}
+{"id": "4921", "text": "turn off my first alarm", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "4930", "text": "turn on an alarm for three thirty p. m. today", "target": {"intent": "alarm_set", "slots": {"time": "three thirty p. m.", "date": "today"}}}
+{"id": "4933", "text": "will it rain now", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain"}}}
+{"id": "4955", "text": "would you love to see", "target": {"intent": "iot_hue_lightchange", "slots": {}}}
+{"id": "4966", "text": "hello i want to turn off my wemo plug", "target": {"intent": "iot_wemo_off", "slots": {"device_type": "wemo plug"}}}
+{"id": "4988", "text": "prepare a cup of coffee for me", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "4992", "text": "turn off sockets", "target": {"intent": "iot_wemo_off", "slots": {}}}
+{"id": "5006", "text": "what times are my alarms set for", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "5009", "text": "will i need an umbrella this week", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "umbrella", "date": "this week"}}}
+{"id": "5010", "text": "make my usual", "target": {"intent": "iot_coffee", "slots": {"coffee_type": "usual"}}}
+{"id": "5014", "text": "can you make the room brighter", "target": {"intent": "iot_hue_lightup", "slots": {"house_place": "room"}}}
+{"id": "5017", "text": "can you please make a coffee", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "5026", "text": "please make the lights natural", "target": {"intent": "iot_hue_lightchange", "slots": {}}}
+{"id": "5037", "text": "how cold is today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "cold", "date": "today"}}}
+{"id": "5038", "text": "what is the weather for this week", "target": {"intent": "weather_query", "slots": {"date": "this week"}}}
+{"id": "5040", "text": "what's the weather now", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "5043", "text": "set my alarm for twelve p. m.", "target": {"intent": "alarm_set", "slots": {"time": "twelve p. m."}}}
+{"id": "5047", "text": "alexa please turn down the lights in the house", "target": {"intent": "iot_hue_lightdim", "slots": {"house_place": "house"}}}
+{"id": "5050", "text": "off all type of active devices", "target": {"intent": "iot_wemo_off", "slots": {}}}
+{"id": "5051", "text": "make a new alarm", "target": {"intent": "alarm_set", "slots": {}}}
+{"id": "5074", "text": "what was the weather for the week", "target": {"intent": "weather_query", "slots": {"time": "week"}}}
+{"id": "5082", "text": "new alarm for six am", "target": {"intent": "alarm_set", "slots": {"time": "six am"}}}
+{"id": "5085", "text": "what is the forecast for saturday", "target": {"intent": "weather_query", "slots": {"date": "saturday"}}}
+{"id": "5103", "text": "olly cancel all soccer practice alarms", "target": {"intent": "alarm_remove", "slots": {"alarm_type": "soccer practice"}}}
+{"id": "5116", "text": "i don't want any alarms", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "5122", "text": "check if default alarm is set", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "5128", "text": "confirm a travel ticket to german", "target": {"intent": "transport_ticket", "slots": {"place_name": "german"}}}
+{"id": "5149", "text": "set the coffee maker to on", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee maker"}}}
+{"id": "5156", "text": "turn the light off in the living room", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "living room"}}}
+{"id": "5157", "text": "olly turn the light off in the living room", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "living room"}}}
+{"id": "5165", "text": "lower the intensity of light", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "5176", "text": "what kind of weather should i expect this week", "target": {"intent": "weather_query", "slots": {"date": "this week"}}}
+{"id": "5201", "text": "turn my lights down to a lower level of brightness", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "5243", "text": "siri please turn the lights off in the bathroom", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "bathroom"}}}
+{"id": "5292", "text": "fix alarm", "target": {"intent": "alarm_set", "slots": {}}}
+{"id": "5301", "text": "what is the weather going to be like on march twentieth two thousand and seventeen", "target": {"intent": "weather_query", "slots": {"date": "march twentieth two thousand and seventeen"}}}
+{"id": "5321", "text": "show weather", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "5330", "text": "put on the vacuum on now and clean the living room", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuum", "house_place": "living room"}}}
+{"id": "5339", "text": "low cooling condition", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "5349", "text": "olly give me some dim light", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "5365", "text": "set alarm six am", "target": {"intent": "alarm_set", "slots": {"time": "six am"}}}
+{"id": "5396", "text": "please turn socket off", "target": {"intent": "iot_wemo_off", "slots": {}}}
+{"id": "5433", "text": "is it going to rain later", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rain"}}}
+{"id": "5439", "text": "do i need umbrella for night", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "umbrella", "timeofday": "night"}}}
+{"id": "5465", "text": "can i wear my sandals today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "sandals", "date": "today"}}}
+{"id": "5468", "text": "have i need to take a sun glass", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "sun glass"}}}
+{"id": "5475", "text": "i need you to get me up at six am", "target": {"intent": "alarm_set", "slots": {"time": "six am"}}}
+{"id": "5501", "text": "please put all the lights", "target": {"intent": "iot_hue_lightup", "slots": {"device_type": "all the lights"}}}
+{"id": "5524", "text": "weather at the moment", "target": {"intent": "weather_query", "slots": {"time": "the moment"}}}
+{"id": "5529", "text": "what time should i go for a hike", "target": {"intent": "weather_query", "slots": {"event_name": "hike"}}}
+{"id": "5568", "text": "set alarm at nine am on next sunday", "target": {"intent": "alarm_set", "slots": {"time": "nine am", "date": "next sunday"}}}
+{"id": "5573", "text": "please set the brightness of lightness appropriately in kitchen", "target": {"intent": "iot_hue_lightup", "slots": {"house_place": "kitchen"}}}
+{"id": "5574", "text": "brighten of lights in living room", "target": {"intent": "iot_hue_lightup", "slots": {"house_place": "living room"}}}
+{"id": "5577", "text": "i will require full cover jacket if it is too stormy in evening", "target": {"intent": "weather_query", "slots": {"weather_descriptor": ["full cover jacket", "too stormy"], "timeofday": "evening"}}}
+{"id": "5578", "text": "i will need warm socks in winter in morning", "target": {"intent": "weather_query", "slots": {"weather_descriptor": ["warm socks", "winter"], "timeofday": "morning"}}}
+{"id": "5584", "text": "please turn the lights off", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "5590", "text": "open temperature", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "temperature"}}}
+{"id": "5623", "text": "alarm ten am", "target": {"intent": "alarm_set", "slots": {"time": "ten am"}}}
+{"id": "5635", "text": "ensure i have to get up at six in morning", "target": {"intent": "alarm_set", "slots": {"time": "six", "timeofday": "morning"}}}
+{"id": "5650", "text": "ask for the weather today evening", "target": {"intent": "weather_query", "slots": {"date": "today", "timeofday": "evening"}}}
+{"id": "5652", "text": "switch wemo plug socket off", "target": {"intent": "iot_wemo_off", "slots": {"device_type": "wemo plug socket"}}}
+{"id": "5661", "text": "should i take my raincoat with me now", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "raincoat"}}}
+{"id": "5697", "text": "begin vacuuming", "target": {"intent": "iot_cleaning", "slots": {"device_type": "vacuuming"}}}
+{"id": "5721", "text": "show me tomorrows weather in this area", "target": {"intent": "weather_query", "slots": {"date": "tomorrows", "place_name": "this area"}}}
+{"id": "5722", "text": "display the seven day forecast for this week", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "the seven day forecast", "date": "this week"}}}
+{"id": "5727", "text": "brighten the light of hall", "target": {"intent": "iot_hue_lightup", "slots": {"house_place": "hall"}}}
+{"id": "5732", "text": "shall i change my car tires to snow tires soon", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "snow tires"}}}
+{"id": "5758", "text": "how's the weather in the capital city", "target": {"intent": "weather_query", "slots": {"place_name": "the capital city"}}}
+{"id": "5797", "text": "should i wear raincoat before getting out", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "raincoat"}}}
+{"id": "5837", "text": "tell me about this week's weather", "target": {"intent": "weather_query", "slots": {"date": "this week's"}}}
+{"id": "5856", "text": "turn off smart plug socket", "target": {"intent": "iot_wemo_off", "slots": {"device_type": "smart plug socket"}}}
+{"id": "5871", "text": "hows mysore climate today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "mysore climate", "date": "today"}}}
+{"id": "5888", "text": "power off please", "target": {"intent": "iot_wemo_off", "slots": {}}}
+{"id": "5902", "text": "check if alarm is set for six am", "target": {"intent": "alarm_query", "slots": {"time": "six am"}}}
+{"id": "5917", "text": "make a coffee please", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "5953", "text": "is the city cheaper or costlier to live", "target": {"intent": "weather_query", "slots": {"place_name": "city"}}}
+{"id": "5955", "text": "how safe is the city regarding law and order", "target": {"intent": "weather_query", "slots": {}}}
+{"id": "5974", "text": "did i set an alarm to have tablets in the noon", "target": {"intent": "alarm_query", "slots": {"event_name": "to have tablets", "timeofday": "noon"}}}
+{"id": "5988", "text": "adjust the lights to a lower setting please", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "5996", "text": "will i need my snow boots this afternoon", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "snow boots", "timeofday": "this afternoon"}}}
+{"id": "6015", "text": "decrease brightness of lights", "target": {"intent": "iot_hue_lightdim", "slots": {}}}
+{"id": "6023", "text": "will it be a sticky night", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "sticky", "timeofday": "night"}}}
+{"id": "6024", "text": "should i take a sweater or a coat to work today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": ["sweater", "coat"], "date": "today"}}}
+{"id": "6025", "text": "will i need sunscreen this afternoon", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "sunscreen", "timeofday": "this afternoon"}}}
+{"id": "6034", "text": "coffee", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "6039", "text": "will it be rainy day tomorrow", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "rainy", "date": "tomorrow"}}}
+{"id": "6041", "text": "hey olly turn off the light please", "target": {"intent": "iot_hue_lightoff", "slots": {}}}
+{"id": "6050", "text": "will i need sunscreen later", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "sunscreen"}}}
+{"id": "6055", "text": "did i leave the light on in the garage", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "garage"}}}
+{"id": "6060", "text": "please start the coffee pot", "target": {"intent": "iot_coffee", "slots": {"device_type": "coffee pot"}}}
+{"id": "6061", "text": "make the coffee", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "6069", "text": "are storms likely today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "storms", "date": "today"}}}
+{"id": "6073", "text": "turn off porch light", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "porch"}}}
+{"id": "6074", "text": "turn off bedroom light at nine thirty p. m.", "target": {"intent": "iot_hue_lightoff", "slots": {"house_place": "bedroom", "time": "nine thirty p. m."}}}
+{"id": "6083", "text": "create an alarm for today at ten am", "target": {"intent": "alarm_set", "slots": {"date": "today", "time": "ten am"}}}
+{"id": "6093", "text": "should i open the sun roof", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "open the sun roof"}}}
+{"id": "6101", "text": "are there any alarms currently set", "target": {"intent": "alarm_query", "slots": {}}}
+{"id": "6103", "text": "hey what will the weather be like to today in los angeles california", "target": {"intent": "weather_query", "slots": {"date": "today", "place_name": "los angeles california"}}}
+{"id": "6116", "text": "info on this week weather", "target": {"intent": "weather_query", "slots": {"date": "this week"}}}
+{"id": "6127", "text": "do you recommend an umbrellas", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "umbrellas"}}}
+{"id": "6151", "text": "i want to know today's weather", "target": {"intent": "weather_query", "slots": {"date": "today's"}}}
+{"id": "6159", "text": "clean the floor", "target": {"intent": "iot_cleaning", "slots": {"house_place": "floor"}}}
+{"id": "6162", "text": "delete alarm", "target": {"intent": "alarm_remove", "slots": {}}}
+{"id": "6172", "text": "are sunglasses a good choice for today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "sunglasses", "date": "today"}}}
+{"id": "6174", "text": "make it brighter in here", "target": {"intent": "iot_hue_lightup", "slots": {}}}
+{"id": "6177", "text": "will i need an umbrella today", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "umbrella", "date": "today"}}}
+{"id": "6178", "text": "should i wear a jacket", "target": {"intent": "weather_query", "slots": {"weather_descriptor": "jacket"}}}
+{"id": "6194", "text": "how's the weather today", "target": {"intent": "weather_query", "slots": {"date": "today"}}}
+{"id": "6289", "text": "hey what is the weather like today", "target": {"intent": "weather_query", "slots": {"date": "today"}}}
+{"id": "6370", "text": "what's my upcoming week look like", "target": {"intent": "calendar_query", "slots": {"date": "upcoming week"}}}
+{"id": "6403", "text": "how to get somewhere", "target": {"intent": "transport_query", "slots": {}}}
+{"id": "6411", "text": "what's the weather next wednesday", "target": {"intent": "weather_query", "slots": {"date": "wednesday"}}}
+{"id": "6539", "text": "mark today as the start of my diet", "target": {"intent": "calendar_set", "slots": {"date": "today", "event_name": "the start of my diet"}}}
+{"id": "6713", "text": "cancel business meeting on wednesday", "target": {"intent": "calendar_remove", "slots": {"event_name": "business meeting", "date": "wednesday"}}}
+{"id": "6722", "text": "is there anything i should be reminded about", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "6725", "text": "remind me about my schedule for the afternoon", "target": {"intent": "calendar_set", "slots": {"timeofday": "afternoon"}}}
+{"id": "6726", "text": "cancel next meeting", "target": {"intent": "calendar_remove", "slots": {"event_name": "meeting"}}}
+{"id": "6729", "text": "cancel the breakfast at tiffany's house", "target": {"intent": "calendar_remove", "slots": {"meal_type": "breakfast", "place_name": "tiffany's house"}}}
+{"id": "6732", "text": "add meeting reminder for sunday with my parents in law", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "date": "sunday", "relation": "parents in law"}}}
+{"id": "6744", "text": "put meeting with pawel for tomorrow ten am", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "pawel", "date": "tomorrow", "time": "ten am"}}}
+{"id": "6746", "text": "set first week of june as holiday in my calendar", "target": {"intent": "calendar_set", "slots": {"time": "first week of june", "event_name": "holiday"}}}
+{"id": "6747", "text": "how many reminders do i have", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "6755", "text": "please clean my calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "6761", "text": "remove from my calendar meeting at nine am", "target": {"intent": "calendar_remove", "slots": {"event_name": "meeting", "time": "nine am"}}}
+{"id": "6764", "text": "remind me to wash the windows", "target": {"intent": "calendar_set", "slots": {"event_name": "wash the windows"}}}
+{"id": "6774", "text": "set an event for friday", "target": {"intent": "calendar_set", "slots": {"date": "friday"}}}
+{"id": "6785", "text": "what is my next reminder", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "6789", "text": "set meeting with joanna on saturday four p. m.", "target": {"intent": "calendar_set", "slots": {"person": "joanna", "date": "saturday", "time": "four p. m."}}}
+{"id": "6798", "text": "remove my next event", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "6801", "text": "show me my meetings this friday", "target": {"intent": "calendar_query", "slots": {"date": "this friday"}}}
+{"id": "6806", "text": "show me my calendar event this friday afternoon", "target": {"intent": "calendar_query", "slots": {"date": "this friday", "timeofday": "afternoon"}}}
+{"id": "6815", "text": "remind me my mom's birthday a week before", "target": {"intent": "calendar_set", "slots": {"relation": "mom's", "event_name": "birthday", "time": "a week before"}}}
+{"id": "6819", "text": "olly there's a good band playing tonight at nine at jazz bar i want to go", "target": {"intent": "calendar_set", "slots": {"event_name": "band playing", "timeofday": "tonight", "time": "at nine", "place_name": "jazz bar"}}}
+{"id": "6836", "text": "remind me about the meeting tomorrow at six", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "date": "tomorrow", "time": "six"}}}
+{"id": "6850", "text": "list out my schedule today", "target": {"intent": "calendar_query", "slots": {"date": "today"}}}
+{"id": "6856", "text": "give me a reminder notification on tomorrow's meeting at ten am", "target": {"intent": "calendar_set", "slots": {"date": "tomorrow's", "event_name": "meeting", "time": "ten am"}}}
+{"id": "6860", "text": "is there any upcoming events", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "6865", "text": "set up a notification about tomorrow's meeting at ten", "target": {"intent": "calendar_set", "slots": {"date": "tomorrow's", "event_name": "meeting", "time": "ten"}}}
+{"id": "6878", "text": "schedule a meeting with the accounting department on two thirty p. m. on friday", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "business_name": "accounting department", "time": "two thirty p. m.", "date": "friday"}}}
+{"id": "6891", "text": "are there morning shows available", "target": {"intent": "calendar_query", "slots": {"timeofday": "morning", "event_name": "shows"}}}
+{"id": "6892", "text": "can you give me the movie schedule", "target": {"intent": "calendar_query", "slots": {"event_name": "movie"}}}
+{"id": "6897", "text": "remind me to pick up linda at five in the evening on seventh", "target": {"intent": "calendar_set", "slots": {"event_name": "pick up", "person": "linda", "time": "five", "timeofday": "evening", "date": "seventh"}}}
+{"id": "6901", "text": "remind me tomorrow at ten am about the meeting", "target": {"intent": "calendar_set", "slots": {"date": "tomorrow", "time": "ten am", "event_name": "meeting"}}}
+{"id": "6902", "text": "set a reminder up next month to get my oil changed", "target": {"intent": "calendar_set", "slots": {"date": "next month", "event_name": "oil changed"}}}
+{"id": "6909", "text": "what is happening after one and before three p. m.", "target": {"intent": "calendar_query", "slots": {"time": ["after one", "before three p. m."]}}}
+{"id": "6918", "text": "delete events from calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "6923", "text": "set reminder to print the documents on tuesday morning", "target": {"intent": "calendar_set", "slots": {"event_name": "print the documents", "date": "tuesday", "timeofday": "morning"}}}
+{"id": "6926", "text": "is it friday", "target": {"intent": "calendar_query", "slots": {"date": "friday"}}}
+{"id": "6928", "text": "erase all the events", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "6936", "text": "remind me to take my medicine at nine am", "target": {"intent": "calendar_set", "slots": {"event_name": "medicine", "time": "nine am"}}}
+{"id": "6937", "text": "set reminder for noon to get lunch with boss", "target": {"intent": "calendar_set", "slots": {"timeofday": "noon", "event_name": "lunch with boss"}}}
+{"id": "6946", "text": "are there any meetings set for next wednesday", "target": {"intent": "calendar_query", "slots": {"event_name": "meetings", "date": "wednesday"}}}
+{"id": "6958", "text": "make sure there is no events on my calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "6959", "text": "remind me about my meeting an hour before it begins", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "time": "an hour"}}}
+{"id": "6962", "text": "can i know what i have to do the next saturday at six p. m.", "target": {"intent": "calendar_set", "slots": {"date": "saturday", "time": "six p. m."}}}
+{"id": "6964", "text": "can you remind my next meeting with my boss one hour before it will happen", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "relation": "boss", "time": "one hour"}}}
+{"id": "6967", "text": "can you check the facts on this issue", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "6968", "text": "i need to confirm all meetings for today can the invite person", "target": {"intent": "calendar_query", "slots": {"event_name": "meetings", "date": "today"}}}
+{"id": "6973", "text": "add a reminder of a conference for tomorrow in new york", "target": {"intent": "calendar_set", "slots": {"event_name": "conference", "date": "tomorrow", "place_name": "new york"}}}
+{"id": "6974", "text": "i have a function at washington tomorrow remind it", "target": {"intent": "calendar_set", "slots": {"event_name": "function", "place_name": "washington", "date": "tomorrow"}}}
+{"id": "6980", "text": "give me to do list", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "6992", "text": "show future events", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "6994", "text": "remind me at", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "6997", "text": "remove succeeding event", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "7000", "text": "new event", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "7004", "text": "add a reminder to my calendar every year on this date", "target": {"intent": "calendar_set", "slots": {"general_frequency": "every year"}}}
+{"id": "7013", "text": "when is the event going to start", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7014", "text": "give me the schedule for today's events", "target": {"intent": "calendar_query", "slots": {"date": "today's"}}}
+{"id": "7025", "text": "remove new year from calendar", "target": {"intent": "calendar_remove", "slots": {"event_name": "new year"}}}
+{"id": "7039", "text": "set me a meeting next tuesday at eleven am with jesse", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "date": "tuesday", "time": "eleven am", "person": "jesse"}}}
+{"id": "7044", "text": "remind me to start getting ready by five p. m. please", "target": {"intent": "calendar_set", "slots": {"event_name": "getting ready", "time": "five p. m."}}}
+{"id": "7046", "text": "add tal meeting on twenty first at seven", "target": {"intent": "calendar_set", "slots": {"event_name": "tal meeting", "date": "twenty first", "time": "seven"}}}
+{"id": "7055", "text": "schedule a meeting with matt at eleven am on thursday", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "matt", "time": "eleven am", "date": "thursday"}}}
+{"id": "7057", "text": "schedule a lunch meeting with brent on wednesday at noon", "target": {"intent": "calendar_set", "slots": {"event_name": "lunch meeting", "person": "brent", "date": "wednesday", "timeofday": "noon"}}}
+{"id": "7061", "text": "give me a reminder twenty four hours before my friday meeting with edg", "target": {"intent": "calendar_set", "slots": {"time": "twenty four hours before", "date": "friday", "event_name": "meeting", "person": "edg"}}}
+{"id": "7073", "text": "search my calendar for my next event and notify me before it occurs", "target": {"intent": "calendar_set", "slots": {"time": "before"}}}
+{"id": "7080", "text": "cancel everything on my calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "7087", "text": "cancel the tomorrow's meeting from my calendar", "target": {"intent": "calendar_remove", "slots": {"date": "tomorrow's", "event_name": "meeting"}}}
+{"id": "7098", "text": "add my car payment on the twelfth in my calendar", "target": {"intent": "calendar_set", "slots": {"event_name": "car payment", "date": "twelfth"}}}
+{"id": "7100", "text": "remind me the day before my car is due", "target": {"intent": "calendar_set", "slots": {"date": "day before", "event_name": "car"}}}
+{"id": "7111", "text": "what time is my doctor appointment on march thirty first", "target": {"intent": "calendar_query", "slots": {"event_name": "doctor appointment", "date": "march thirty first"}}}
+{"id": "7113", "text": "will there any events downtown this weekend", "target": {"intent": "calendar_query", "slots": {"place_name": "downtown", "date": "this weekend"}}}
+{"id": "7117", "text": "get rid of the events on the nineteenth from my calendar", "target": {"intent": "calendar_remove", "slots": {"date": "nineteenth"}}}
+{"id": "7120", "text": "what's my schedule like today", "target": {"intent": "calendar_query", "slots": {"date": "today"}}}
+{"id": "7122", "text": "could you repeat this event", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "7140", "text": "set a reminder to notify me one hour before lunch meeting", "target": {"intent": "calendar_set", "slots": {"event_name": "lunch meeting"}}}
+{"id": "7141", "text": "is this program is scheduled", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7151", "text": "for every odd numbered sunday set a reminder for", "target": {"intent": "calendar_set", "slots": {"general_frequency": "odd numbered sunday"}}}
+{"id": "7152", "text": "set lunch every day at twelve thirty", "target": {"intent": "calendar_set", "slots": {"meal_type": "lunch", "general_frequency": "every day", "time": "twelve thirty"}}}
+{"id": "7161", "text": "remind this event in future", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "7170", "text": "it's my mother's birthday today send me a notification every year on this date", "target": {"intent": "calendar_set", "slots": {"relation": "mother's", "event_name": "birthday", "date": "today", "general_frequency": "every year"}}}
+{"id": "7181", "text": "wake me at six am thursday so i have time for the meeting", "target": {"intent": "calendar_set", "slots": {"time": "six am", "date": "thursday", "event_name": "meeting"}}}
+{"id": "7185", "text": "when is my next appointment with doctor smith", "target": {"intent": "calendar_query", "slots": {"event_name": "appointment", "person": "doctor smith"}}}
+{"id": "7189", "text": "do i have anything planned", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7194", "text": "i am having a meeting on tomorrow set it", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "date": "tomorrow"}}}
+{"id": "7196", "text": "remind me the meeting with allen on fifteenth march", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "allen", "time": "fifteenth march"}}}
+{"id": "7199", "text": "set a notification for three two and one hours before next week's english final", "target": {"intent": "calendar_set", "slots": {"date": "next week's", "event_name": "english final"}}}
+{"id": "7209", "text": "can you remind me to take the garbage out on tuesday", "target": {"intent": "calendar_set", "slots": {"event_name": "garbage out", "date": "tuesday"}}}
+{"id": "7219", "text": "did you place the reminder about the meeting for tomorrow", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting", "date": "tomorrow"}}}
+{"id": "7224", "text": "where is the venue in which the marriage of tom is going to take place", "target": {"intent": "calendar_query", "slots": {"event_name": "marriage"}}}
+{"id": "7232", "text": "what are the events next week", "target": {"intent": "calendar_query", "slots": {"date": "next week"}}}
+{"id": "7257", "text": "please remind me to call mom in half an hour", "target": {"intent": "calendar_set", "slots": {"event_name": "call", "relation": "mom", "time": "in half an hour"}}}
+{"id": "7258", "text": "remind me to send email to boss after one hour", "target": {"intent": "calendar_set", "slots": {"relation": "boss"}}}
+{"id": "7262", "text": "create a notification reminder for meeting tomorrow", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "date": "tomorrow"}}}
+{"id": "7266", "text": "what are my pending tasks", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7278", "text": "remind me of rita's birthday twenty four hours in advance", "target": {"intent": "calendar_set", "slots": {"person": "rita's", "event_name": "birthday", "time": "twenty four hours in advance"}}}
+{"id": "7287", "text": "remind me about my anniversary in one day advance", "target": {"intent": "calendar_set", "slots": {"event_name": "anniversary", "date": "in one day advance"}}}
+{"id": "7289", "text": "get rid of all events with jeff", "target": {"intent": "calendar_remove", "slots": {"person": "jeff"}}}
+{"id": "7291", "text": "block one hour from ten tomorrow morning", "target": {"intent": "calendar_set", "slots": {"time": ["one hour", "ten"], "date": "tomorrow", "timeofday": "morning"}}}
+{"id": "7292", "text": "i am unavailable from four to six in the evening tomorrow mark my calendar", "target": {"intent": "calendar_set", "slots": {"time": ["four", "six"], "timeofday": "evening", "date": "tomorrow"}}}
+{"id": "7293", "text": "schedule a one hour appointment for saturday", "target": {"intent": "calendar_set", "slots": {"time": "one hour", "date": "saturday"}}}
+{"id": "7294", "text": "remove the appointment with george adams from my calendar", "target": {"intent": "calendar_remove", "slots": {"event_name": "appointment", "person": "george adams"}}}
+{"id": "7295", "text": "please clear my calendar", "target": {"intent": "calendar_remove", "slots": {"time": "clear"}}}
+{"id": "7314", "text": "what's for today", "target": {"intent": "calendar_query", "slots": {"date": "today"}}}
+{"id": "7316", "text": "do i have any appointments", "target": {"intent": "calendar_query", "slots": {"event_name": "appointments"}}}
+{"id": "7319", "text": "what is going on today from two four p. m.", "target": {"intent": "calendar_query", "slots": {"date": "today", "time": "two four p. m."}}}
+{"id": "7355", "text": "remind me to check the stew at six o'clock", "target": {"intent": "calendar_set", "slots": {"event_name": "check the stew", "time": "six"}}}
+{"id": "7380", "text": "please show today meeting with clients", "target": {"intent": "calendar_query", "slots": {"date": "today", "relation": "clients"}}}
+{"id": "7397", "text": "is there any events planned for the next three months", "target": {"intent": "calendar_query", "slots": {"time": "next three months"}}}
+{"id": "7449", "text": "please schedule a meeting with this person", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting"}}}
+{"id": "7450", "text": "i need a meeting to be schedule with this person", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting"}}}
+{"id": "7455", "text": "remind me about the party tomorrow", "target": {"intent": "calendar_set", "slots": {"event_name": "party", "date": "tomorrow"}}}
+{"id": "7461", "text": "invite people to the calendar event", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "7463", "text": "inform my group that the new meeting date is tomorrow", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "date": "tomorrow"}}}
+{"id": "7467", "text": "give me the time of the events", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7477", "text": "remind me on fifth march of every year to arrange wedding anniversary presents", "target": {"intent": "calendar_set", "slots": {"date": "fifth march", "general_frequency": "every year", "event_name": "wedding anniversary presents"}}}
+{"id": "7496", "text": "do i have appointments today", "target": {"intent": "calendar_query", "slots": {"event_name": "appointments", "date": "today"}}}
+{"id": "7499", "text": "make new schedule for tomorrow meeting", "target": {"intent": "calendar_set", "slots": {"date": "tomorrow", "event_name": "meeting"}}}
+{"id": "7500", "text": "can you delete the next event", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "7502", "text": "what is on the agenda for the four p. m. meeting with joe", "target": {"intent": "calendar_query", "slots": {"time": "four p. m.", "person": "joe"}}}
+{"id": "7503", "text": "where in d. c. is that meeting at one p. m. on friday", "target": {"intent": "calendar_query", "slots": {"place_name": "d. c.", "event_name": "meeting", "time": "one p. m.", "date": "friday"}}}
+{"id": "7520", "text": "remind me everyday at two p. m. for lunch", "target": {"intent": "calendar_set", "slots": {"general_frequency": "everyday", "time": "two p. m.", "meal_type": "lunch"}}}
+{"id": "7524", "text": "how much mehta willing to invest in my company in meeting which held today at five hundred and twenty p. m.", "target": {"intent": "calendar_query", "slots": {"person": "mehta", "event_name": "meeting", "date": "today", "time": "five hundred and twenty p. m."}}}
+{"id": "7528", "text": "thirteenth june is a day of election result please set it", "target": {"intent": "calendar_set", "slots": {"date": "thirteenth june", "event_name": "election result"}}}
+{"id": "7531", "text": "please add my pay days", "target": {"intent": "calendar_set", "slots": {"event_name": "pay days"}}}
+{"id": "7539", "text": "do i have anything going on", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7542", "text": "please remind me about this tomorrow", "target": {"intent": "calendar_set", "slots": {"date": "tomorrow"}}}
+{"id": "7549", "text": "i want a meeting till three o'clock", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "time": "three o'clock"}}}
+{"id": "7556", "text": "set my calendar to remind me to buy groceries every friday", "target": {"intent": "calendar_set", "slots": {"event_name": "buy groceries", "general_frequency": "every friday"}}}
+{"id": "7557", "text": "make a reminder of location a on calendar", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "7559", "text": "remind me tonight to pick up my dry cleaning at eight p. m.", "target": {"intent": "calendar_set", "slots": {"event_name": "pick up my dry cleaning", "time": "eight p. m."}}}
+{"id": "7563", "text": "remind me about the meeting tomorrow one hour before", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "date": "tomorrow"}}}
+{"id": "7565", "text": "meeting reminder", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting"}}}
+{"id": "7567", "text": "birthday", "target": {"intent": "calendar_set", "slots": {"event_name": "birthday"}}}
+{"id": "7569", "text": "plan for tomorrow", "target": {"intent": "calendar_query", "slots": {"date": "tomorrow"}}}
+{"id": "7570", "text": "what is the plan today", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7583", "text": "buddy adding event in your calendar", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "7596", "text": "please schedule a meeting with derrick in haysi at noon", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "derrick", "place_name": "haysi", "timeofday": "noon"}}}
+{"id": "7598", "text": "please set a meeting to discuss terrorism with fred on the next available meeting day", "target": {"intent": "calendar_set", "slots": {"event_name": ["meeting", "discuss terrorism"], "person": "fred", "date": "next available"}}}
+{"id": "7606", "text": "meet with joe tomorrow at three", "target": {"intent": "calendar_set", "slots": {"person": "joe", "date": "tomorrow", "time": "three"}}}
+{"id": "7609", "text": "remove meeting reminder for tuesday", "target": {"intent": "calendar_remove", "slots": {"event_name": "meeting", "date": "tuesday"}}}
+{"id": "7613", "text": "what's was the upcoming event", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7628", "text": "remind me when i am at the library to get a new library card", "target": {"intent": "calendar_set", "slots": {"place_name": "library", "event_name": "get a new library card"}}}
+{"id": "7654", "text": "mark april twenty as my brother's birthday", "target": {"intent": "calendar_set", "slots": {"date": "april twenty", "relation": "brother's", "event_name": "birthday"}}}
+{"id": "7655", "text": "add a reminder for april twenty as my bro's birthday", "target": {"intent": "calendar_set", "slots": {"date": "april twenty", "relation": "bro's", "event_name": "birthday"}}}
+{"id": "7660", "text": "cancel all my appointments after three p. m. today and inform me the details", "target": {"intent": "calendar_remove", "slots": {"event_name": "appointments", "time": "three p. m.", "date": "today"}}}
+{"id": "7662", "text": "can you list out my meetings today", "target": {"intent": "calendar_query", "slots": {"event_name": "meetings", "date": "today"}}}
+{"id": "7664", "text": "add a lunch with mike", "target": {"intent": "calendar_set", "slots": {"meal_type": "lunch", "person": "mike"}}}
+{"id": "7666", "text": "will you mark that i have a meeting with tom at three tomorrow", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "tom", "time": "three", "date": "tomorrow"}}}
+{"id": "7680", "text": "in my calendar delete all of my golf events for the current month", "target": {"intent": "calendar_remove", "slots": {"event_name": "golf events", "date": "month"}}}
+{"id": "7686", "text": "include mike and jack to festival calendar", "target": {"intent": "calendar_set", "slots": {"person": ["mike", "jack"], "event_name": "festival"}}}
+{"id": "7690", "text": "what do i have coming up", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7693", "text": "do i have anything planned for the twenty first", "target": {"intent": "calendar_query", "slots": {"date": "twenty first"}}}
+{"id": "7697", "text": "set a reminder for this", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "7711", "text": "hey cancel all my other meetings and calls for second march as it is jim's birthday tag it as an event in your calendar", "target": {"intent": "calendar_set", "slots": {"date": "second march", "person": "jim's", "event_name": "birthday"}}}
+{"id": "7712", "text": "hey olly cancel all my other meetings and calls for second march as it is jim's birthday tag it as an event in your calendar", "target": {"intent": "calendar_set", "slots": {"date": "second march", "person": "jim's", "event_name": "birthday"}}}
+{"id": "7718", "text": "hey send a meeting invite to mr. ross for this friday's meeting and block my calendar for friday afternoon", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "mr. ross", "date": ["this friday's", "friday afternoon"]}}}
+{"id": "7726", "text": "i need to something every monday set a reminder for it", "target": {"intent": "calendar_set", "slots": {"general_frequency": "every monday"}}}
+{"id": "7730", "text": "i need you to mark next monday", "target": {"intent": "calendar_set", "slots": {"date": "monday"}}}
+{"id": "7741", "text": "clear my calendar for saturday", "target": {"intent": "calendar_remove", "slots": {"date": "saturday"}}}
+{"id": "7751", "text": "remind me every monday to take out the trash", "target": {"intent": "calendar_set", "slots": {"general_frequency": "every monday"}}}
+{"id": "7762", "text": "what reminders do i have", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7767", "text": "add practice to calendar on feb four at king's park at two p. m.", "target": {"intent": "calendar_set", "slots": {"date": "feb four", "place_name": "king's park", "time": "two p. m."}}}
+{"id": "7768", "text": "please add practice on feb four at king's park at two p. m.", "target": {"intent": "calendar_set", "slots": {"date": "feb four", "place_name": "king's park", "time": "two p. m."}}}
+{"id": "7774", "text": "add shopping to my calendar for tomorrow", "target": {"intent": "calendar_set", "slots": {"date": "tomorrow"}}}
+{"id": "7777", "text": "do i have an appointment today", "target": {"intent": "calendar_query", "slots": {"event_name": "appointment", "date": "today"}}}
+{"id": "7778", "text": "remind me what i am doing on sunday afternoon", "target": {"intent": "calendar_set", "slots": {"date": "sunday", "timeofday": "afternoon"}}}
+{"id": "7808", "text": "remind me i take mom to the hairdresser's thursday at one thousand one hundred am", "target": {"intent": "calendar_set", "slots": {"relation": ["mom", "hairdresser's"], "date": "thursday", "time": "one thousand one hundred am"}}}
+{"id": "7817", "text": "is this true about this date", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7820", "text": "erase all the events in the calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "7836", "text": "delete all events", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "7843", "text": "let me know in two hours that i have to leave for my violin lesson that's at four p. m. at musicworkz", "target": {"intent": "calendar_set", "slots": {"time": ["two hours", "four p. m."], "event_name": "violin lesson", "place_name": "musicworkz"}}}
+{"id": "7844", "text": "what reminders did i set", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7847", "text": "alert me when registration opens", "target": {"intent": "calendar_set", "slots": {"event_name": "registration"}}}
+{"id": "7851", "text": "i have a meeting at noon today", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "timeofday": "noon", "date": "today"}}}
+{"id": "7863", "text": "remind me to start supper this afternoon at five", "target": {"intent": "calendar_set", "slots": {"event_name": "supper", "time": "afternoon at five"}}}
+{"id": "7870", "text": "delete event from calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "7878", "text": "erase my calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "7879", "text": "what are my next three events", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7889", "text": "what time will the soccer match be tonight", "target": {"intent": "calendar_query", "slots": {"event_name": "soccer match", "timeofday": "tonight"}}}
+{"id": "7890", "text": "clear haircut today", "target": {"intent": "calendar_remove", "slots": {"event_name": "haircut", "date": "today"}}}
+{"id": "7891", "text": "cancel dinner tonight", "target": {"intent": "calendar_remove", "slots": {"meal_type": "dinner", "timeofday": "tonight"}}}
+{"id": "7892", "text": "delete the next event today", "target": {"intent": "calendar_remove", "slots": {"date": "today"}}}
+{"id": "7894", "text": "give me an update on the election in one hour", "target": {"intent": "calendar_set", "slots": {"event_name": "election", "time": "one hour"}}}
+{"id": "7902", "text": "set a meeting between myself and john at two p. m. tomorrow", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "john", "time": "two p. m.", "date": "tomorrow"}}}
+{"id": "7908", "text": "do i need to do anything today", "target": {"intent": "calendar_query", "slots": {"date": "today"}}}
+{"id": "7912", "text": "alexa remove dinner with mike from my calendar", "target": {"intent": "calendar_remove", "slots": {"meal_type": "dinner", "person": "mike"}}}
+{"id": "7916", "text": "remind me to take out the garbage at six p. m.", "target": {"intent": "calendar_set", "slots": {"time": "six p. m."}}}
+{"id": "7918", "text": "calendar event send invite bill malinda", "target": {"intent": "calendar_set", "slots": {"person": "bill malinda"}}}
+{"id": "7919", "text": "new meeting add bill and malinda as attendees", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "bill and malinda"}}}
+{"id": "7922", "text": "open tasks delete future events", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "7927", "text": "what do i have to do this week", "target": {"intent": "calendar_query", "slots": {"date": "this week"}}}
+{"id": "7946", "text": "what are the upcoming concerts in dallas", "target": {"intent": "calendar_query", "slots": {"place_name": "dallas"}}}
+{"id": "7953", "text": "remove my appointment with my doctor on saturday please", "target": {"intent": "calendar_remove", "slots": {"event_name": "appointment", "relation": "my doctor", "date": "saturday"}}}
+{"id": "7955", "text": "put this event in a repeating pattern on my calendar", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "7956", "text": "can you make this event repetitive", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "7966", "text": "did i tell you to remind me something", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "7970", "text": "remind me the wedding on time to buy a present", "target": {"intent": "calendar_set", "slots": {"event_name": "wedding"}}}
+{"id": "7971", "text": "set a reminder for two days prior of the event", "target": {"intent": "calendar_set", "slots": {"date": "two days"}}}
+{"id": "7975", "text": "is there valet service at the event", "target": {"intent": "calendar_query", "slots": {"relation": "valet service"}}}
+{"id": "7978", "text": "what reminders do i have scheduled before noon tomorrow", "target": {"intent": "calendar_query", "slots": {"timeofday": "noon", "date": "tomorrow"}}}
+{"id": "7980", "text": "tell me when i have an event", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "7981", "text": "send an alert before meeting", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting"}}}
+{"id": "7993", "text": "delete all events from my calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8001", "text": "can you erase the haircut i have scheduled for friday", "target": {"intent": "calendar_remove", "slots": {"event_name": "haircut", "date": "friday"}}}
+{"id": "8004", "text": "dorothy needs to talk to me about our divorce can you please set up a meeting as soon as i am available", "target": {"intent": "calendar_set", "slots": {"person": "dorothy", "event_name": ["divorce", "meeting"]}}}
+{"id": "8005", "text": "on monday the twentieth i need to have a conversation with greg about our weekend trip", "target": {"intent": "calendar_set", "slots": {"date": "monday the twentieth", "event_name": ["conversation", "our weekend trip"], "person": "greg"}}}
+{"id": "8013", "text": "show me my meeting for the next month", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting", "date": "next month"}}}
+{"id": "8029", "text": "what events are upcoming today", "target": {"intent": "calendar_query", "slots": {"date": "today"}}}
+{"id": "8035", "text": "remind me to get the oil changed", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8037", "text": "remind me to something in sometime", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8042", "text": "how many people are attending my next meeting", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting"}}}
+{"id": "8043", "text": "what time is my next appointment", "target": {"intent": "calendar_query", "slots": {"event_name": "appointment"}}}
+{"id": "8044", "text": "what's my schedule today", "target": {"intent": "calendar_query", "slots": {"date": "today"}}}
+{"id": "8055", "text": "erase my appointment for march seven", "target": {"intent": "calendar_remove", "slots": {"event_name": "appointment", "date": "march seven"}}}
+{"id": "8056", "text": "do i have a date on friday", "target": {"intent": "calendar_query", "slots": {"date": "friday"}}}
+{"id": "8058", "text": "do i have a sales meeting today", "target": {"intent": "calendar_query", "slots": {"event_name": "sales meeting", "date": "today"}}}
+{"id": "8073", "text": "schedule a sales meeting for wednesday at eleven am", "target": {"intent": "calendar_set", "slots": {"event_name": "sales meeting", "date": "wednesday", "time": "eleven am"}}}
+{"id": "8079", "text": "set a reminder in one hour for my bread to bake", "target": {"intent": "calendar_set", "slots": {"time": "one hour", "event_name": "bread to bake"}}}
+{"id": "8084", "text": "what is the event agenda", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8085", "text": "i'd like to set a date for this week", "target": {"intent": "calendar_set", "slots": {"date": "this week"}}}
+{"id": "8107", "text": "set a birthday event for martin", "target": {"intent": "calendar_set", "slots": {"event_name": "birthday", "person": "martin"}}}
+{"id": "8110", "text": "please add supervision to my calendar", "target": {"intent": "calendar_set", "slots": {"event_name": "supervision"}}}
+{"id": "8116", "text": "during the timeframe of february one and march sixteen what meetings occurred", "target": {"intent": "calendar_query", "slots": {"date": "february one and march sixteen", "event_name": "meetings"}}}
+{"id": "8119", "text": "where is mary's birthday party being held", "target": {"intent": "calendar_query", "slots": {"person": "mary's", "event_name": "birthday party"}}}
+{"id": "8125", "text": "create a meeting event in my calendar", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting"}}}
+{"id": "8126", "text": "schedule a meeting event in my calendar", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting"}}}
+{"id": "8129", "text": "what reminders do i still have", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8140", "text": "set a reminder for the thirteenth that i have a lunch with dale", "target": {"intent": "calendar_set", "slots": {"date": "thirteenth", "meal_type": "lunch"}}}
+{"id": "8148", "text": "did i leave myself any reminders", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8150", "text": "do i have any remainder about birthday party", "target": {"intent": "calendar_query", "slots": {"event_name": "birthday party"}}}
+{"id": "8165", "text": "one thousand two hundred and thirty p. m. already you will have a meeting in ten mins", "target": {"intent": "calendar_query", "slots": {"time": ["one thousand two hundred and thirty p. m.", "ten mins"], "event_name": "meeting"}}}
+{"id": "8182", "text": "can you delete the dentist appointment", "target": {"intent": "calendar_remove", "slots": {"event_name": "dentist appointment"}}}
+{"id": "8188", "text": "what date is it", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8204", "text": "please remind me to go to the post office", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8206", "text": "don't let me forget to buy a gift for my sister", "target": {"intent": "calendar_set", "slots": {"relation": "sister"}}}
+{"id": "8230", "text": "how long will my lunch meeting be on tuesday", "target": {"intent": "calendar_query", "slots": {"event_name": "lunch meeting", "date": "tuesday"}}}
+{"id": "8241", "text": "clear everything off my calendar for the rest of the year", "target": {"intent": "calendar_remove", "slots": {"date": "rest of the year"}}}
+{"id": "8245", "text": "i would need to be notified of church services on sundays at eleven am", "target": {"intent": "calendar_set", "slots": {"event_name": "church services", "date": "sundays", "time": "eleven am"}}}
+{"id": "8248", "text": "add tomorrows dinner date to the calendar", "target": {"intent": "calendar_set", "slots": {"date": "tomorrows", "meal_type": "dinner"}}}
+{"id": "8251", "text": "i need next week's lunch put on the calendar", "target": {"intent": "calendar_set", "slots": {"date": "next week's", "meal_type": "lunch"}}}
+{"id": "8260", "text": "please alert me a day before jeff's birthday", "target": {"intent": "calendar_set", "slots": {"date": "a day before", "person": "jeff's", "event_name": "birthday"}}}
+{"id": "8261", "text": "send me an alert and hour before my next appointment", "target": {"intent": "calendar_set", "slots": {"time": "hour before", "event_name": "appointment"}}}
+{"id": "8269", "text": "thirty minute reminder on meeting for tuesday", "target": {"intent": "calendar_set", "slots": {"time": "thirty minute", "date": "tuesday"}}}
+{"id": "8276", "text": "remove my next scheduled appointment please", "target": {"intent": "calendar_remove", "slots": {"event_name": "appointment"}}}
+{"id": "8280", "text": "i need to set reminder on fifteenth march", "target": {"intent": "calendar_set", "slots": {"date": "fifteenth march"}}}
+{"id": "8284", "text": "remove birthday from calendar", "target": {"intent": "calendar_remove", "slots": {"event_name": "birthday"}}}
+{"id": "8289", "text": "set a reminder about todays faculty meeting at four", "target": {"intent": "calendar_set", "slots": {"date": "todays", "event_name": "faculty meeting", "time": "four"}}}
+{"id": "8290", "text": "open a reminder about next weeks managers meeting on tuesday", "target": {"intent": "calendar_set", "slots": {"date": ["next weeks", "tuesday"], "event_name": "managers meeting"}}}
+{"id": "8294", "text": "add to calendar and repeat", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8300", "text": "save event for five p. m. to six p. m. on march eighteenth", "target": {"intent": "calendar_set", "slots": {"time": "five p. m. to six p. m.", "date": "march eighteenth"}}}
+{"id": "8302", "text": "remove next monday's meeting", "target": {"intent": "calendar_remove", "slots": {"date": "next monday's", "event_name": "meeting"}}}
+{"id": "8336", "text": "when is my brunch with jennifer", "target": {"intent": "calendar_query", "slots": {"event_name": "brunch", "person": "jennifer"}}}
+{"id": "8345", "text": "let me know when the meeting is gonna happen", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting"}}}
+{"id": "8347", "text": "what is going on on december fourth", "target": {"intent": "calendar_query", "slots": {"date": "december fourth"}}}
+{"id": "8358", "text": "remind me about this", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8366", "text": "make march eighteen a repeating appointment for pearl's birthday", "target": {"intent": "calendar_set", "slots": {"date": "march eighteen", "event_name": "appointment for pearl's birthday"}}}
+{"id": "8387", "text": "create reminder for laundry at eight p. m.", "target": {"intent": "calendar_set", "slots": {"time": "eight p. m."}}}
+{"id": "8388", "text": "i want to do laundry at eight p. m. create reminder", "target": {"intent": "calendar_set", "slots": {"time": "eight p. m."}}}
+{"id": "8390", "text": "remind me of my meeting on", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting"}}}
+{"id": "8394", "text": "set a reminder every day at noon to take medication", "target": {"intent": "calendar_set", "slots": {"general_frequency": "every day", "timeofday": "noon"}}}
+{"id": "8404", "text": "i want to know more about this event", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8409", "text": "delete my dinner tomorrow", "target": {"intent": "calendar_remove", "slots": {"meal_type": "dinner", "date": "tomorrow"}}}
+{"id": "8410", "text": "remove my dinner event for monday", "target": {"intent": "calendar_remove", "slots": {"meal_type": "dinner", "date": "monday"}}}
+{"id": "8413", "text": "please alert me", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8414", "text": "remind me to go to dinner with dave on friday at five p. m.", "target": {"intent": "calendar_set", "slots": {"meal_type": "dinner", "person": "dave", "date": "friday", "time": "five p. m."}}}
+{"id": "8415", "text": "add a meeting at the office with brian for three p. m. on tuesday", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "place_name": "office", "person": "brian", "time": "three p. m.", "date": "tuesday"}}}
+{"id": "8426", "text": "tell me current events between yesterday and this morning", "target": {"intent": "calendar_query", "slots": {"date": "yesterday", "timeofday": "morning"}}}
+{"id": "8430", "text": "cancel all my appointments", "target": {"intent": "calendar_remove", "slots": {"event_name": "appointments"}}}
+{"id": "8431", "text": "get rid of all my scheduled events", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8436", "text": "please set lunch meeting at twelve p. m. for every wednesday in march", "target": {"intent": "calendar_set", "slots": {"event_name": "lunch meeting", "time": "twelve p. m.", "general_frequency": "every wednesday", "date": "march"}}}
+{"id": "8442", "text": "please modify my calendar with this event", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8449", "text": "set a reminder for my daughters birthday", "target": {"intent": "calendar_set", "slots": {"relation": "daughters", "event_name": "birthday"}}}
+{"id": "8453", "text": "please put event into my calendar and mark it as a repeating event", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8460", "text": "show me my events", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8461", "text": "what are my plans for the month of may", "target": {"intent": "calendar_query", "slots": {"date": "month of may"}}}
+{"id": "8466", "text": "i have a nine am meeting on wednesday send me a reminder", "target": {"intent": "calendar_set", "slots": {"time": "nine am", "event_name": "meeting", "date": "wednesday"}}}
+{"id": "8469", "text": "what is scheduled on my calendar today", "target": {"intent": "calendar_query", "slots": {"date": "today"}}}
+{"id": "8474", "text": "add jane's birthday party for tomorrow two p. m. at one hundred and twenty three main on my calendar", "target": {"intent": "calendar_set", "slots": {"person": "jane's", "event_name": "birthday party", "date": "tomorrow", "time": "two p. m.", "place_name": "one hundred and twenty three main"}}}
+{"id": "8494", "text": "what does my schedule look like today", "target": {"intent": "calendar_query", "slots": {"date": "today"}}}
+{"id": "8496", "text": "tell my meetings for tomorrow morning", "target": {"intent": "calendar_query", "slots": {"event_name": "meetings", "date": "tomorrow", "timeofday": "morning"}}}
+{"id": "8498", "text": "let's go through all pending reminders", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8516", "text": "delete calendar item", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8520", "text": "add event to calendar app", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8525", "text": "meeting reminders from three to five", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting", "time": "three to five"}}}
+{"id": "8535", "text": "will you remind me of the dentist appointment i have in two hours", "target": {"intent": "calendar_set", "slots": {"event_name": "dentist appointment", "time": "two hours"}}}
+{"id": "8539", "text": "remind me about", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8541", "text": "remind me please", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8553", "text": "add a meeting to my calendar for nine am with tom", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "time": "nine am", "person": "tom"}}}
+{"id": "8559", "text": "do i have anything scheduled for today", "target": {"intent": "calendar_query", "slots": {"date": "today"}}}
+{"id": "8562", "text": "delete my meeting for two o'clock p. m. today", "target": {"intent": "calendar_remove", "slots": {"event_name": "meeting", "time": "two o'clock p. m."}}}
+{"id": "8568", "text": "will you send a calendar invite out to james and alice for brunch at eleven am on tuesday", "target": {"intent": "calendar_set", "slots": {"person": "james and alice", "event_name": "brunch", "time": "eleven am", "date": "tuesday"}}}
+{"id": "8570", "text": "will you mark that i am busy for an event tomorrow at two p. m.", "target": {"intent": "calendar_set", "slots": {"date": "tomorrow", "time": "two p. m."}}}
+{"id": "8579", "text": "what information should i know for my meetings today", "target": {"intent": "calendar_query", "slots": {"event_name": "meetings", "date": "today"}}}
+{"id": "8585", "text": "remind me that i have a birthday party on the thirtieth", "target": {"intent": "calendar_set", "slots": {"event_name": "birthday party", "date": "thirtieth"}}}
+{"id": "8598", "text": "remind me to pick up mark at the airport at six p. m.", "target": {"intent": "calendar_set", "slots": {"event_name": "pick up mark", "place_name": "airport", "time": "six p. m."}}}
+{"id": "8618", "text": "remind me to water my plants every tuesday thursday and saturday", "target": {"intent": "calendar_set", "slots": {"event_name": "water my plants", "general_frequency": "every tuesday thursday and saturday"}}}
+{"id": "8631", "text": "erase that from my calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8635", "text": "can you remind me to order the turkey three weeks before thanksgiving", "target": {"intent": "calendar_set", "slots": {"event_name": "order the turkey"}}}
+{"id": "8640", "text": "i want to make a note on my calendar for the event tomorrow at the library", "target": {"intent": "calendar_set", "slots": {"date": "tomorrow", "place_name": "the library"}}}
+{"id": "8642", "text": "add conference call at four p. m. to my reminders for today", "target": {"intent": "calendar_set", "slots": {"event_name": "conference call", "time": "four p. m.", "date": "today"}}}
+{"id": "8651", "text": "notify me about the event in my calendar", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8653", "text": "remind me of the event in my calendar", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8666", "text": "erase all events from my calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8667", "text": "within the past three months how many meetings did i have with mr. richards", "target": {"intent": "calendar_query", "slots": {"time": "past three months", "event_name": "meetings", "person": "mr. richards"}}}
+{"id": "8670", "text": "remove events from calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8672", "text": "where is the kiss concert", "target": {"intent": "calendar_query", "slots": {"event_name": "kiss concert"}}}
+{"id": "8674", "text": "where is my meeting at nine am", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting", "time": "nine am"}}}
+{"id": "8679", "text": "is today saint patricks day", "target": {"intent": "calendar_query", "slots": {"date": "today", "event_name": "saint patricks day"}}}
+{"id": "8681", "text": "is it any ones birthday", "target": {"intent": "calendar_query", "slots": {"event_name": "birthday"}}}
+{"id": "8694", "text": "the event will include walter and gemma", "target": {"intent": "calendar_set", "slots": {"person": ["walter", "gemma"]}}}
+{"id": "8730", "text": "please set a reminder in my calendar for my meeting on march twenty five", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "date": "march twenty five"}}}
+{"id": "8731", "text": "set a repeating reminder alarm for the facebook event i have to attend on seventh april", "target": {"intent": "alarm_set", "slots": {"media_type": "facebook", "date": "seventh april"}}}
+{"id": "8732", "text": "delete all dates", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8741", "text": "set an alert for two p. m.", "target": {"intent": "alarm_set", "slots": {"time": "two p. m."}}}
+{"id": "8762", "text": "tell me my schedule for later this afternoon", "target": {"intent": "calendar_query", "slots": {"timeofday": "this afternoon"}}}
+{"id": "8765", "text": "put my dinner at red lobster on the calendar for today at nine", "target": {"intent": "calendar_set", "slots": {"meal_type": "dinner", "place_name": "red lobster", "date": "today", "time": "nine"}}}
+{"id": "8766", "text": "do i have a meeting on saturday march twenty fifth", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting", "date": "saturday march twenty fifth"}}}
+{"id": "8767", "text": "is jessica's birthday on april twelfth", "target": {"intent": "calendar_query", "slots": {"person": "jessica's", "date": "april twelfth"}}}
+{"id": "8769", "text": "delete upcoming event", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8771", "text": "delete the shopping trip i have scheduled march twenty third", "target": {"intent": "calendar_remove", "slots": {"event_name": "shopping trip", "date": "march twenty third"}}}
+{"id": "8774", "text": "is my schedule for july seventh completely open", "target": {"intent": "calendar_query", "slots": {"date": "july seventh"}}}
+{"id": "8781", "text": "am i free at four p. m.", "target": {"intent": "calendar_query", "slots": {"time": "four p. m."}}}
+{"id": "8782", "text": "do i have a meeting this afternoon", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting", "timeofday": "this afternoon"}}}
+{"id": "8791", "text": "more information on this event", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8795", "text": "show pending reminders", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8824", "text": "what do i have scheduled for the nineteenth at two p. m.", "target": {"intent": "calendar_query", "slots": {"date": "the nineteenth", "time": "two p. m."}}}
+{"id": "8825", "text": "send me a reminder of my meeting with tom next friday", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "tom", "date": "friday"}}}
+{"id": "8828", "text": "is calendar event true", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8846", "text": "do i have anything set for the fourth of july this year", "target": {"intent": "calendar_query", "slots": {"date": "the fourth of july this year"}}}
+{"id": "8853", "text": "clear my next activity", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8856", "text": "delete all events in calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8857", "text": "remind upcoming meeting with eminem", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "eminem"}}}
+{"id": "8867", "text": "olly set alarm for reminder", "target": {"intent": "alarm_set", "slots": {}}}
+{"id": "8868", "text": "remind me to call mom every tuesday at ten am", "target": {"intent": "calendar_set", "slots": {"event_name": "call mom", "general_frequency": "every tuesday", "time": "ten am"}}}
+{"id": "8880", "text": "set a reminder about tomorrow's meeting at nine am", "target": {"intent": "calendar_set", "slots": {"date": "tomorrow's", "event_name": "meeting", "time": "nine am"}}}
+{"id": "8882", "text": "make an alarm for the meeting with bob at seven today", "target": {"intent": "alarm_set", "slots": {"event_name": "meeting", "person": "bob", "time": "seven", "date": "today"}}}
+{"id": "8888", "text": "delete it", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8900", "text": "set repeating reminder for every sunday", "target": {"intent": "calendar_set", "slots": {"general_frequency": "every sunday"}}}
+{"id": "8904", "text": "information of recent events", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "8906", "text": "set event date in calendar with others", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8907", "text": "mention event in calendar with others", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8912", "text": "give me today's calendar events after six p. m.", "target": {"intent": "calendar_query", "slots": {"date": "today's", "time": "after six p. m."}}}
+{"id": "8914", "text": "what time is my appointment on april fourth", "target": {"intent": "calendar_query", "slots": {"event_name": "appointment", "date": "april fourth"}}}
+{"id": "8916", "text": "what is my schedule for the day", "target": {"intent": "calendar_query", "slots": {"date": "the day"}}}
+{"id": "8925", "text": "delete all the events in my calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8939", "text": "hayathis daughter baby shower", "target": {"intent": "calendar_set", "slots": {"person": "hayathis", "event_name": "daughter baby shower"}}}
+{"id": "8948", "text": "add event for meeting with james", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "james"}}}
+{"id": "8949", "text": "please remove remainder", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "8958", "text": "open meeting time", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting"}}}
+{"id": "8960", "text": "i want you to make alert in the evening about upcoming meeting", "target": {"intent": "calendar_set", "slots": {"timeofday": "evening", "event_name": "meeting"}}}
+{"id": "8967", "text": "remind me two days before my wife birthday", "target": {"intent": "calendar_set", "slots": {"relation": "wife", "event_name": "birthday"}}}
+{"id": "8968", "text": "tell me something to remind this week", "target": {"intent": "calendar_set", "slots": {"date": "this week"}}}
+{"id": "8975", "text": "what are meeting scheduled for today", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting", "date": "today"}}}
+{"id": "8977", "text": "just set me reminders about pending bill payments", "target": {"intent": "calendar_set", "slots": {"event_name": "pending bill payments"}}}
+{"id": "8978", "text": "just let me know the important meetings with my boss over the week", "target": {"intent": "calendar_set", "slots": {"event_name": "important meetings with my boss", "time": "over the week"}}}
+{"id": "8985", "text": "ok google delete eric's b. day from the calendar", "target": {"intent": "calendar_remove", "slots": {"event_name": "eric's b. day"}}}
+{"id": "8990", "text": "make event", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "8992", "text": "show meetings", "target": {"intent": "calendar_set", "slots": {"event_name": "meetings"}}}
+{"id": "9009", "text": "remove anniversary event from my calendar", "target": {"intent": "calendar_remove", "slots": {"event_name": "anniversary"}}}
+{"id": "9011", "text": "is the thanks giving event on fourteenth of this month true", "target": {"intent": "calendar_query", "slots": {"event_name": "thanks giving", "date": "fourteenth of this month"}}}
+{"id": "9014", "text": "please set a notification on twenty third october about meeting with my colleague", "target": {"intent": "calendar_set", "slots": {"date": "twenty third october", "event_name": "meeting", "relation": "colleague"}}}
+{"id": "9015", "text": "clear my calendar all events", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "9019", "text": "meetings from twenty to twenty five june", "target": {"intent": "calendar_query", "slots": {"event_name": "meetings", "time": "twenty to twenty five june"}}}
+{"id": "9030", "text": "remove from calendar my medical appointment for today", "target": {"intent": "calendar_remove", "slots": {"event_name": "medical appointment", "date": "today"}}}
+{"id": "9035", "text": "rahul marriage reminder", "target": {"intent": "calendar_query", "slots": {"person": "rahul", "event_name": "marriage"}}}
+{"id": "9043", "text": "upcoming events in calendar", "target": {"intent": "calendar_set", "slots": {"event_name": "upcoming events"}}}
+{"id": "9053", "text": "set a meeting event reminder with mona on tuesday", "target": {"intent": "calendar_set", "slots": {"event_name": "meeting", "person": "mona", "date": "tuesday"}}}
+{"id": "9054", "text": "event reminder mona tuesday", "target": {"intent": "calendar_set", "slots": {"event_name": "mona", "date": "tuesday"}}}
+{"id": "9059", "text": "alert me at the time of the event", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "9061", "text": "what information do i have on reminders", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "9062", "text": "can you put in lee's birthday on the twenty second of june", "target": {"intent": "calendar_set", "slots": {"event_name": "lee's birthday", "date": "twenty second of june"}}}
+{"id": "9074", "text": "please remove that event", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "9088", "text": "wipe everything on my calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "9095", "text": "remove tonights dinner with shelly", "target": {"intent": "calendar_remove", "slots": {"event_name": "tonights dinner with shelly"}}}
+{"id": "9103", "text": "is there a meeting on my calendar this afternoon", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting", "timeofday": "this afternoon"}}}
+{"id": "9107", "text": "what time does the zach brown concert on june third begin", "target": {"intent": "calendar_query", "slots": {"event_name": "zach brown concert", "date": "june third"}}}
+{"id": "9110", "text": "exhibition two thousand and seventeen mass on mar twenty five make a note of it on the corresponding date", "target": {"intent": "calendar_set", "slots": {"event_name": "exhibition two thousand and seventeen mass", "date": "mar twenty five"}}}
+{"id": "9112", "text": "do add this on my calendar", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "9114", "text": "make a repeating reminder for this calendar event", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "9116", "text": "could you reschedule my meeting", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting"}}}
+{"id": "9121", "text": "what days do i have booked", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "9124", "text": "show me the events in my work calendar for next week", "target": {"intent": "calendar_set", "slots": {"event_name": "work", "date": "next week"}}}
+{"id": "9137", "text": "at what time is the italian cafe closed between lunch and dinner", "target": {"intent": "calendar_query", "slots": {"business_name": "italian cafe"}}}
+{"id": "9149", "text": "what time is the black tie gala dinner supposed to begin", "target": {"intent": "calendar_query", "slots": {"event_name": "black tie gala dinner"}}}
+{"id": "9153", "text": "please add dinner with mary to my calendar on saturday", "target": {"intent": "calendar_set", "slots": {"event_name": "dinner with mary", "date": "saturday"}}}
+{"id": "9155", "text": "on friday please put dentist appointment at three", "target": {"intent": "calendar_set", "slots": {"date": "friday", "event_name": "dentist appointment", "time": "three"}}}
+{"id": "9156", "text": "remind", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "9175", "text": "has my calendar been updated in the last ten minutes", "target": {"intent": "calendar_query", "slots": {"time": "last ten minutes"}}}
+{"id": "9182", "text": "cancel my plans to pick up my parents from the airport", "target": {"intent": "calendar_remove", "slots": {"event_name": "pick up my parents", "place_name": "airport"}}}
+{"id": "9187", "text": "research the clients that will attend the meeting", "target": {"intent": "calendar_set", "slots": {"event_name": "the meeting"}}}
+{"id": "9193", "text": "please set this date to repeat", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "9194", "text": "please remove this event from my calendar", "target": {"intent": "calendar_remove", "slots": {}}}
+{"id": "9197", "text": "what do i have planned for this week", "target": {"intent": "calendar_query", "slots": {"date": "this week"}}}
+{"id": "9198", "text": "please check my reminders", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "10772", "text": "remove my dentist's appointment from today's schedule", "target": {"intent": "calendar_remove", "slots": {"event_name": "dentist's appointment", "date": "today's"}}}
+{"id": "10832", "text": "olly what do i have planned next", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "11180", "text": "my party planning", "target": {"intent": "calendar_query", "slots": {"event_name": "party"}}}
+{"id": "11914", "text": "olly i need a drink", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "11915", "text": "i need a drink", "target": {"intent": "iot_coffee", "slots": {}}}
+{"id": "12121", "text": "book me a taxi to leith in half an hour", "target": {"intent": "transport_taxi", "slots": {"transport_type": "taxi", "place_name": "leith", "time": "half an hour"}}}
+{"id": "12127", "text": "i need to go to dundee at five am on sunday by train", "target": {"intent": "transport_ticket", "slots": {"place_name": "dundee", "time": "five am", "date": "sunday", "transport_type": "train"}}}
+{"id": "12150", "text": "olly book me a ticket to paris on eurostar this weekend", "target": {"intent": "transport_ticket", "slots": {"place_name": "paris", "transport_name": "eurostar", "date": "this weekend"}}}
+{"id": "12159", "text": "can you book an uber for me", "target": {"intent": "transport_taxi", "slots": {"transport_agency": "uber"}}}
+{"id": "12160", "text": "can you book an uber tomorrow", "target": {"intent": "transport_taxi", "slots": {"transport_agency": "uber", "date": "tomorrow"}}}
+{"id": "12161", "text": "can you book an uber after i left for office", "target": {"intent": "transport_taxi", "slots": {"transport_agency": "uber"}}}
+{"id": "12162", "text": "can you book a train ticket", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train"}}}
+{"id": "12166", "text": "book my train ticket from las vegas to los angeles", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": ["las vegas", "los angeles"]}}}
+{"id": "12182", "text": "what are the traffic conditions on the one hundred and one", "target": {"intent": "transport_traffic", "slots": {"place_name": "one hundred and one"}}}
+{"id": "12189", "text": "how do i get to the train station for a ticket", "target": {"intent": "transport_query", "slots": {"place_name": "train station"}}}
+{"id": "12212", "text": "call city cab to airport", "target": {"intent": "transport_taxi", "slots": {"transport_type": "cab", "place_name": "airport"}}}
+{"id": "12213", "text": "get city cab here to airport", "target": {"intent": "transport_taxi", "slots": {"transport_type": "cab", "place_name": "airport"}}}
+{"id": "12233", "text": "google train tickets to washington d. c.", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": "washington d. c."}}}
+{"id": "12235", "text": "please purchase a train ticket for this weekend", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "time": "weekend"}}}
+{"id": "12240", "text": "what is the traffic like on my commute home at five", "target": {"intent": "transport_query", "slots": {"place_name": "home", "time": "five"}}}
+{"id": "12244", "text": "book a taxi to go to the movies at one", "target": {"intent": "transport_taxi", "slots": {"transport_type": "taxi", "place_name": "movies", "time": "one"}}}
+{"id": "12245", "text": "when is the next train to glasgow from aberdeen", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": ["glasgow", "aberdeen"]}}}
+{"id": "12248", "text": "olly find the nearest uber", "target": {"intent": "transport_taxi", "slots": {"transport_agency": "uber"}}}
+{"id": "12251", "text": "get me the local train timing to destination cstm", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "cstm"}}}
+{"id": "12252", "text": "what time are the trains going to chennai leaving", "target": {"intent": "transport_query", "slots": {"place_name": "chennai"}}}
+{"id": "12254", "text": "tell me about city traffic", "target": {"intent": "transport_traffic", "slots": {"place_name": "city"}}}
+{"id": "12256", "text": "how is the traffic presently near central park road", "target": {"intent": "transport_traffic", "slots": {"place_name": "central park road"}}}
+{"id": "12261", "text": "tell me my options for a train to los angles next wednesday or thursday", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "los angles", "date": ["wednesday", "thursday"]}}}
+{"id": "12263", "text": "california", "target": {"intent": "transport_query", "slots": {"place_name": "california"}}}
+{"id": "12264", "text": "new york", "target": {"intent": "transport_query", "slots": {"place_name": "new york"}}}
+{"id": "12281", "text": "please book a train ticket from london to manchester", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": ["london", "manchester"]}}}
+{"id": "12289", "text": "is there a traffic jam on my route", "target": {"intent": "transport_traffic", "slots": {}}}
+{"id": "12291", "text": "ticket for bombay", "target": {"intent": "transport_ticket", "slots": {"place_name": "bombay"}}}
+{"id": "12293", "text": "ticket for delhi", "target": {"intent": "transport_ticket", "slots": {"place_name": "delhi"}}}
+{"id": "12294", "text": "show me the train schedules to the metropolitan opera house", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "metropolitan opera house"}}}
+{"id": "12299", "text": "call me a taxi olly", "target": {"intent": "transport_taxi", "slots": {"transport_type": "taxi"}}}
+{"id": "12306", "text": "book a first class ticket in the next train to miami", "target": {"intent": "transport_ticket", "slots": {"transport_descriptor": "first class", "transport_type": "train", "place_name": "miami"}}}
+{"id": "12308", "text": "book me a train ticket", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train"}}}
+{"id": "12310", "text": "give me the list of available train tickets from edinburgh to leeds", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": ["edinburgh", "leeds"]}}}
+{"id": "12329", "text": "call yellow cab", "target": {"intent": "transport_taxi", "slots": {"transport_type": "yellow cab"}}}
+{"id": "12339", "text": "book a train ticket for one one way for this tuesday at nine am", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "transport_descriptor": "one way", "date": "tuesday", "time": "nine am"}}}
+{"id": "12340", "text": "can you please book train tickets for two for this friday", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "date": "friday"}}}
+{"id": "12343", "text": "check time of ten thousand eight hundred and eighty seven train from luni station on tuesday", "target": {"intent": "transport_query", "slots": {"transport_name": "ten thousand eight hundred and eighty seven", "transport_type": "train", "place_name": "luni station", "date": "tuesday"}}}
+{"id": "12354", "text": "give me the train time", "target": {"intent": "transport_query", "slots": {"transport_type": "train"}}}
+{"id": "12366", "text": "is there a connecting train from london to paris and what time", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": ["london", "paris"]}}}
+{"id": "12367", "text": "what's the best way to sheffield", "target": {"intent": "transport_query", "slots": {"place_name": "sheffield"}}}
+{"id": "12376", "text": "what is the first metro to d. c.", "target": {"intent": "transport_query", "slots": {"transport_type": "metro", "place_name": "d. c."}}}
+{"id": "12377", "text": "get me a uber", "target": {"intent": "transport_taxi", "slots": {"transport_agency": "uber"}}}
+{"id": "12381", "text": "book a train ticket from baltimore maryland to new york new york", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": ["baltimore maryland", "new york new york"]}}}
+{"id": "12383", "text": "find a taxi to book", "target": {"intent": "transport_taxi", "slots": {"transport_type": "taxi"}}}
+{"id": "12392", "text": "tell me today's direction", "target": {"intent": "transport_query", "slots": {"date": "today's"}}}
+{"id": "12402", "text": "when does the next train traveling the city leave here", "target": {"intent": "transport_query", "slots": {"transport_type": "train"}}}
+{"id": "12413", "text": "what is the current traffic situation", "target": {"intent": "transport_traffic", "slots": {}}}
+{"id": "12419", "text": "fastest route to turiellos", "target": {"intent": "transport_query", "slots": {"place_name": "turiellos"}}}
+{"id": "12430", "text": "tell me the train arrival time to new york", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "new york"}}}
+{"id": "12436", "text": "how long will it take to get to the airport", "target": {"intent": "transport_query", "slots": {"place_name": "airport"}}}
+{"id": "12437", "text": "what is the commute time to the theater", "target": {"intent": "transport_query", "slots": {"place_name": "theater"}}}
+{"id": "12442", "text": "what is the traffic situation at the bazaar highway", "target": {"intent": "transport_traffic", "slots": {"place_name": "bazaar highway"}}}
+{"id": "12446", "text": "can you tell me the times the train leaves for chicago", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "chicago"}}}
+{"id": "12452", "text": "uber me to the airport", "target": {"intent": "transport_taxi", "slots": {"transport_agency": "uber", "place_name": "airport"}}}
+{"id": "12453", "text": "book train best deal", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train"}}}
+{"id": "12468", "text": "find a train ticket to philadelphia", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": "philadelphia"}}}
+{"id": "12469", "text": "purchase ticket to new york city on train", "target": {"intent": "transport_ticket", "slots": {"place_name": "new york city", "transport_type": "train"}}}
+{"id": "12473", "text": "how do i get home from here", "target": {"intent": "transport_query", "slots": {"place_name": "home"}}}
+{"id": "12511", "text": "travel book a train ticket", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train"}}}
+{"id": "12526", "text": "what is the fastest way to get to starbucks", "target": {"intent": "transport_query", "slots": {"business_name": "starbucks"}}}
+{"id": "12532", "text": "lead the way to the place", "target": {"intent": "transport_query", "slots": {}}}
+{"id": "12536", "text": "book me a train ticket to barcelona please", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": "barcelona"}}}
+{"id": "12537", "text": "find me the cheapest train ticket to spain", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": "spain"}}}
+{"id": "12548", "text": "i need a ride home", "target": {"intent": "transport_taxi", "slots": {"place_name": "home"}}}
+{"id": "12553", "text": "book me a cab going to location", "target": {"intent": "transport_taxi", "slots": {"transport_type": "cab"}}}
+{"id": "12558", "text": "please book me a taxi uber", "target": {"intent": "transport_taxi", "slots": {"transport_type": "taxi", "transport_agency": "uber"}}}
+{"id": "12581", "text": "when does the f. train run today", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "date": "today"}}}
+{"id": "12582", "text": "what time does the first metrolink arrive in the morning", "target": {"intent": "transport_query", "slots": {"transport_type": "metrolink", "timeofday": "morning"}}}
+{"id": "12604", "text": "how do i book a train ticket online", "target": {"intent": "transport_query", "slots": {"transport_type": "train"}}}
+{"id": "12606", "text": "i need to get a ticket via train to orlando from hwood", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": "orlando from hwood"}}}
+{"id": "12607", "text": "i need to get a ticket via train to orlando from hwood", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": "orlando from hwood"}}}
+{"id": "12608", "text": "schedule taxi pickup for monday at noon", "target": {"intent": "transport_taxi", "slots": {"transport_type": "taxi", "date": "monday", "timeofday": "noon"}}}
+{"id": "12618", "text": "how much is a round trip train ticket to go to new york", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "new york"}}}
+{"id": "12623", "text": "do you have the train times for beaumont tx", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "beaumont tx"}}}
+{"id": "12629", "text": "what time does the first train depart from chicago", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "chicago"}}}
+{"id": "12634", "text": "when is the next train leaving for austin", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "austin"}}}
+{"id": "12672", "text": "how is traffic in city", "target": {"intent": "transport_traffic", "slots": {}}}
+{"id": "12675", "text": "is traffic light", "target": {"intent": "transport_traffic", "slots": {}}}
+{"id": "12685", "text": "what is the traffic like right now", "target": {"intent": "transport_traffic", "slots": {}}}
+{"id": "12689", "text": "book a train ticket from here to charleston west virginia at eight am today", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": "charleston west virginia", "time": "eight am", "date": "today"}}}
+{"id": "12693", "text": "what does the traffic look like on my usual route to work", "target": {"intent": "transport_traffic", "slots": {}}}
+{"id": "12707", "text": "navigation search", "target": {"intent": "transport_query", "slots": {}}}
+{"id": "12710", "text": "call taxi", "target": {"intent": "transport_taxi", "slots": {"transport_type": "taxi"}}}
+{"id": "12716", "text": "call an uberpool to get me at long island bar", "target": {"intent": "transport_taxi", "slots": {"transport_type": "uberpool", "place_name": "long island bar"}}}
+{"id": "12717", "text": "what is the traffic like now", "target": {"intent": "transport_traffic", "slots": {}}}
+{"id": "12722", "text": "order a train ticket to boston", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": "boston"}}}
+{"id": "12723", "text": "buy me a ticket to boston", "target": {"intent": "transport_ticket", "slots": {"place_name": "boston"}}}
+{"id": "12724", "text": "find me a train ticket to boston", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": "boston"}}}
+{"id": "12736", "text": "road traffic", "target": {"intent": "transport_traffic", "slots": {}}}
+{"id": "12745", "text": "book an uber to pick me up now", "target": {"intent": "transport_taxi", "slots": {"transport_agency": "uber"}}}
+{"id": "12759", "text": "driving time to los angeles", "target": {"intent": "transport_query", "slots": {"place_name": "los angeles"}}}
+{"id": "12779", "text": "reserve the closest uber", "target": {"intent": "transport_taxi", "slots": {"transport_agency": "uber"}}}
+{"id": "12789", "text": "can you tell me about the traffic", "target": {"intent": "transport_traffic", "slots": {}}}
+{"id": "12797", "text": "train times from near me to location", "target": {"intent": "transport_query", "slots": {"place_name": "location"}}}
+{"id": "12800", "text": "where is the public library", "target": {"intent": "transport_query", "slots": {"business_type": "public library"}}}
+{"id": "12802", "text": "book a ticket to ny by train", "target": {"intent": "transport_ticket", "slots": {"place_name": "ny", "transport_type": "train"}}}
+{"id": "12813", "text": "please book a ticket of rajdhani express train from jaipur", "target": {"intent": "transport_ticket", "slots": {"transport_name": "rajdhani express", "transport_type": "train", "place_name": "jaipur"}}}
+{"id": "12814", "text": "please book a ticket form jaipur to mumbai on tuesday", "target": {"intent": "transport_ticket", "slots": {"place_name": ["jaipur", "mumbai"], "date": "tuesday"}}}
+{"id": "12817", "text": "how do i get to the mall", "target": {"intent": "transport_query", "slots": {"place_name": "the mall"}}}
+{"id": "12818", "text": "how much is a train ticket to chicago", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "chicago"}}}
+{"id": "12824", "text": "list all train times to ny", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "ny"}}}
+{"id": "12835", "text": "what time does the train to place leave", "target": {"intent": "transport_query", "slots": {"transport_type": "train"}}}
+{"id": "12838", "text": "how is the traffic at the moment", "target": {"intent": "transport_traffic", "slots": {"time": "the moment"}}}
+{"id": "12839", "text": "take me to layfayette saint and canal", "target": {"intent": "transport_query", "slots": {"place_name": "layfayette saint and canal"}}}
+{"id": "12844", "text": "book a cab to office for me", "target": {"intent": "transport_taxi", "slots": {"transport_type": "cab", "place_name": "office"}}}
+{"id": "12846", "text": "please book train ticket from mumbai to sangli for tomorrow morning", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "place_name": ["mumbai", "sangli"], "date": "tomorrow", "timeofday": "morning"}}}
+{"id": "12851", "text": "show me direction to my home", "target": {"intent": "transport_query", "slots": {"place_name": "home"}}}
+{"id": "12856", "text": "directions please", "target": {"intent": "transport_query", "slots": {}}}
+{"id": "12866", "text": "what is the timing of bagmati express", "target": {"intent": "transport_query", "slots": {"transport_name": "bagmati express"}}}
+{"id": "12869", "text": "traffic report", "target": {"intent": "transport_traffic", "slots": {}}}
+{"id": "12873", "text": "train ticket", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train"}}}
+{"id": "12874", "text": "train ticket please", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train"}}}
+{"id": "12883", "text": "book a train ticket weekend of the twenty sixth phoenix to los angeles", "target": {"intent": "transport_ticket", "slots": {"transport_type": "train", "date": "weekend of the twenty sixth", "place_name": ["phoenix", "los angeles"]}}}
+{"id": "12905", "text": "please reserve the next taxi a nine am", "target": {"intent": "transport_taxi", "slots": {"transport_type": "taxi", "time": "nine am"}}}
+{"id": "12908", "text": "what time does the train arrive in sacremento", "target": {"intent": "transport_query", "slots": {"transport_type": "train", "place_name": "sacremento"}}}
+{"id": "12930", "text": "look up the map to stores near me", "target": {"intent": "transport_query", "slots": {"business_type": "stores"}}}
+{"id": "12932", "text": "olly i need directions to madison street", "target": {"intent": "transport_query", "slots": {"place_name": "madison street"}}}
+{"id": "13177", "text": "remind me to move so there is no weight gain", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "13178", "text": "remind me to contact old friends that i have not talked with in six months before they pass", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "13215", "text": "what is the quickest way to my work downtown without hitting any traffic", "target": {"intent": "transport_query", "slots": {"place_name": "downtown"}}}
+{"id": "13457", "text": "tell me when i should leave for a scheduled event so that i am on time", "target": {"intent": "calendar_set", "slots": {}}}
+{"id": "13548", "text": "i'd like you to turn turn on the t. v.", "target": {"intent": "iot_wemo_on", "slots": {}}}
+{"id": "14214", "text": "find the ways of travel for the same", "target": {"intent": "transport_query", "slots": {}}}
+{"id": "14465", "text": "directions to disney land", "target": {"intent": "transport_query", "slots": {"place_name": "disney land"}}}
+{"id": "14646", "text": "tell me about the cheapest flight fares to nj today", "target": {"intent": "transport_ticket", "slots": {"place_name": "nj", "date": "today"}}}
+{"id": "15305", "text": "do i have any notifications from social media", "target": {"intent": "calendar_query", "slots": {}}}
+{"id": "15792", "text": "who am i meeting today", "target": {"intent": "calendar_query", "slots": {"event_name": "meeting", "date": "today"}}}

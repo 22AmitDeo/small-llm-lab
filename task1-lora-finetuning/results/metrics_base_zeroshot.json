@@ -1,0 +1,11 @@
+{
+  "n": 998,
+  "exact_match": 0.04909819639278557,
+  "intent_acc": 0.3046092184368738,
+  "slot_f1": 0.1561151079136691,
+  "slot_precision": 0.14081765087605452,
+  "slot_recall": 0.1751412429378531,
+  "valid_json": 0.9629258517034068,
+  "setting": "base_zeroshot",
+  "seconds": 159.4
+}

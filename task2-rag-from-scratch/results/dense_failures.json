@@ -1,0 +1,78 @@
+{
+  "80": [
+    {
+      "id": 1,
+      "question": "By when is NIST expected to hold a formal review of the framework with input from the AI community?",
+      "gold_page": 3,
+      "rank": 3,
+      "top1_page": 8,
+      "top1_text": "forums, and many small group meetings \u2013 has informed development of the AI RMF 1.0 as well as AI research and development and evaluation conducted by NIST and others. Priority research and additional guidance that will enhance this Framework will be captured in an associated AI Risk Management Frame"
+    },
+    {
+      "id": 2,
+      "question": "How does the AI RMF define risk?",
+      "gold_page": 9,
+      "rank": 2,
+      "top1_page": 9,
+      "top1_text": "AI RMF 1.0 Part 1: Foundational Information 1. Framing Risk AI risk management offers a path to minimize potential negative impacts of AI systems, such as threats to civil liberties and rights, while also providing opportunities to maximize positive impacts. Addressing, documenting, and managing AI "
+    },
+    {
+      "id": 3,
+      "question": "What should an organisation do if its AI system turns out to have unacceptable levels of negative risk?",
+      "gold_page": 13,
+      "rank": 2,
+      "top1_page": 19,
+      "top1_text": "take into consideration that certain types of failures can cause greater harm. AI risk management efforts should prioritize the minimization of potential negative impacts, and may need to include human intervention in cases where the AI system cannot detect or correct errors. 3.2 Safe AI systems sho"
+    },
+    {
+      "id": 6,
+      "question": "Which characteristic answers why a system made a decision and what it means to the user?",
+      "gold_page": 22,
+      "rank": 2,
+      "top1_page": 17,
+      "top1_text": "such systems. Human judgment should be employed when deciding on the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics. Addressing AI trustworthiness characteristics individually will not ensure AI system trustworthiness; tradeoffs are "
+    },
+    {
+      "id": 9,
+      "question": "Which GOVERN subcategory covers retiring AI systems safely?",
+      "gold_page": 28,
+      "rank": null,
+      "top1_page": 27,
+      "top1_text": "needs or expectations from AI actors evolve over time. Practices related to governing AI risks are described in the NIST AI RMF Playbook. Table 1 lists the GOVERN function\u2019s categories and subcategories. Table 1: Categories and subcategories for the GOVERN function. GOVERN 1: Policies, processes, pr"
+    }
+  ],
+  "300": [
+    {
+      "id": 3,
+      "question": "What should an organisation do if its AI system turns out to have unacceptable levels of negative risk?",
+      "gold_page": 13,
+      "rank": 3,
+      "top1_page": 9,
+      "top1_text": "the environment, and the planet. \u201cRisk management refers to coordinated activities to direct and control an organization with regard to risk\u201d (Source: ISO 31000:2018). While risk management processes generally address negative impacts, this Framework offers approaches to minimize anticipated negativ"
+    },
+    {
+      "id": 10,
+      "question": "After completing which function should a team know enough to make a go/no-go decision on building or deploying an AI system?",
+      "gold_page": 30,
+      "rank": null,
+      "top1_page": 24,
+      "top1_text": "\u2022 explicit processes for making go/no-go system commissioning and deployment decisions; \u2022 established policies, processes, practices, and procedures for improving organizational accountability efforts related to AI system risks; \u2022 enhanced organizational culture which prioritizes the identification "
+    },
+    {
+      "id": 11,
+      "question": "What options are there for responding to high-priority AI risks?",
+      "gold_page": 37,
+      "rank": 5,
+      "top1_page": 13,
+      "top1_text": "are present \u2013 development and deployment should cease in a safe manner until risks can be sufficiently managed. If an AI system\u2019s development, deployment, and use cases are found to be low-risk in a specific context, that may suggest potentially lower prioritization. Risk prioritization may differ b"
+    },
+    {
+      "id": 15,
+      "question": "Who is responsible for piloting an AI system and checking that it works with legacy systems?",
+      "gold_page": 40,
+      "rank": 2,
+      "top1_page": 41,
+      "top1_text": "financial, legal, or policy management authority for acquisition of AI models, products, or services from a third-party developer, vendor, or contractor. Governance and Oversight tasks are assumed by AI actors with management, fiduciary, and legal authority and responsibility for the organization in"
+    }
+  ]
+}

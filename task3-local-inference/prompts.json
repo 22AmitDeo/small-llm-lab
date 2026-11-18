@@ -1,0 +1,12 @@
+[
+  {"id": 1, "kind": "arithmetic word problem", "prompt": "A shop sells pens at 12 rupees each. I buy 7 pens and pay with a 100-rupee note. How much change do I get? Show one line of working, then the final number.", "expected": "16"},
+  {"id": 2, "kind": "fact", "prompt": "What is the capital of Australia? Answer in one word.", "expected": "Canberra"},
+  {"id": 3, "kind": "code", "prompt": "Write a Python function is_palindrome(s) that returns True if s is a palindrome, ignoring case and any non-alphanumeric characters. Only output the code.", "expected": "working function (checked by running it)"},
+  {"id": 4, "kind": "structured extraction", "prompt": "Extract the person's name, age and city from this sentence and return only JSON with the keys name, age, city: \"Priya, who is 29, moved to Pune last year.\"", "expected": "{\"name\": \"Priya\", \"age\": 29, \"city\": \"Pune\"}"},
+  {"id": 5, "kind": "logic", "prompt": "All bloops are razzies and all razzies are lazzies. Are all bloops definitely lazzies? Answer yes or no, then give a one-sentence reason.", "expected": "Yes"},
+  {"id": 6, "kind": "summarisation", "prompt": "Summarise in one sentence: The city council voted on Tuesday to extend the bike-lane network by 40 kilometres over the next three years. Supporters said the plan would cut traffic and pollution, while some shop owners worried that removing parking spaces would hurt business. The first new lanes are expected to open next spring.", "expected": "one accurate sentence"},
+  {"id": 7, "kind": "translation", "prompt": "Translate into French: \"The library opens at nine in the morning and closes at six in the evening.\"", "expected": "La bibliothèque ouvre à neuf heures du matin et ferme à six heures du soir."},
+  {"id": 8, "kind": "character counting", "prompt": "How many times does the letter r appear in the word \"strawberry\"? Answer with a number.", "expected": "3"},
+  {"id": 9, "kind": "mental math", "prompt": "What is 17 multiplied by 24? Give only the number.", "expected": "408"},
+  {"id": 10, "kind": "unit conversion", "prompt": "Convert 5 miles to kilometres, rounded to two decimal places. Give the number and the unit.", "expected": "8.05 km"}
+]

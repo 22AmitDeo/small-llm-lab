@@ -1,0 +1,23 @@
+{
+  "how_graded": "Each generated answer (results/answers.jsonl) was read and compared by hand against the question's source passage in questions.json. Correct = states the fact in the source passage without adding a wrong claim.",
+  "generator": "qwen2.5:1.5b-instruct-q4_K_M via Ollama, temperature 0; retrieval = 80-word chunks, hybrid (dense + BM25, RRF) + cross-encoder re-rank, top 5",
+  "correct": 12,
+  "total": 15,
+  "grades": {
+    "1": "correct (no later than 2028)",
+    "2": "correct",
+    "3": "WRONG - says to prioritise the most urgent risk management; the source says development and deployment should cease in a safe manner until risks are managed (the gold passage was retrieved, the model used the neighbouring sentence)",
+    "4": "correct",
+    "5": "correct (Valid & Reliable)",
+    "6": "correct (interpretability)",
+    "7": "correct",
+    "8": "correct",
+    "9": "WRONG - answers GOVERN 4.3; correct is GOVERN 1.7 (gold passage was retrieved at rank 2; the model misread the table)",
+    "10": "correct (MAP)",
+    "11": "correct",
+    "12": "correct",
+    "13": "correct",
+    "14": "correct (video compression)",
+    "15": "WRONG - output only the citation markers '[1] [2]' and no answer (gold passage was retrieved at rank 1)"
+  }
+}
